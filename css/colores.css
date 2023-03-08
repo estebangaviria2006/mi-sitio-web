@@ -1,0 +1,131 @@
+h1{
+  color: brown;
+  margin: 50px;
+}
+
+.box-style{
+    display: inline-block;
+    flex-direction: row;
+}
+
+span {
+    font-size: 0.9em;
+    font-weight: 900;
+    align-items: center;
+}
+.color1 {
+    background-color: black;
+    color: red;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    margin: 50px;
+    font-size: 4em;
+    display: inline-block;
+}
+
+
+.color2 {
+    background-color: aqua;
+    color: black;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    margin: 50px;
+    font-size: 4em;
+    margin-bottom: 40px;
+    display: inline-block;
+}
+
+
+
+.color3 {
+    background-color: cornsilk;
+    color: goldenrod;
+    width: 400px;
+    height: 200px;
+    font-size: 4em;
+    display: inline-block;
+}
+
+
+
+.color4 {
+    background-color: rgb(187, 210, 53);
+    color: rgb(255, 255, 255);
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    font-size: 4em;
+    display: inline-block;
+}
+
+
+.color5 {
+    background-color: rgb(27, 160, 255);
+    color: rgb(215, 9, 215);
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    font-size: 4em;
+    display: inline-block;
+}
+
+.color6 {
+    background-color: rgb(0, 255, 55);
+    color: rgb(18, 63, 243);
+    width: 400px;
+    height: 200px;
+    font-size: 4em;
+    display: inline-block;
+}
+
+
+.color7 {
+    background-color: #fff700;
+    color: #000000;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    font-size: 4em;
+    display: inline-block;
+}
+
+.color8 {
+    background-color: #9cdbd6;
+    color: #9826b5;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    font-size: 4em;
+    display: inline-block;
+}
+
+
+.color9 {
+    background-color: #000dff;
+    color: #69e4ff;
+    width: 400px;
+    height: 200px;
+    font-size: 4em;
+    display: inline-block;
+}
+
+h1 {
+    font-family:'Rampart One', sans-serif;
+}
+
+/* rampart-one-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Rampart One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/rampart-one-v7-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/rampart-one-v7-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/rampart-one-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/rampart-one-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/rampart-one-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/rampart-one-v7-latin-regular.svg#RampartOne') format('svg'); /* Legacy iOS */
+  }
+
