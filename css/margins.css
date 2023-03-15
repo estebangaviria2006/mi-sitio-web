@@ -1,0 +1,43 @@
+h1{
+    text-align: center;
+}
+
+.main-box{
+    display: flex;
+    flex-direction: row;
+}
+
+.box-style{         /* sirve para elegir todos los cuadros de una vez */
+    width: 250px;
+    margin: 20px;
+    height: 400px;
+    display: inline-block;     /* sirve para organizar los cuadros de lado */
+    padding: 15px 30px;    /* sirve para dar espacio y las letras no queden pegadas al contenedor */
+    text-align: justify;
+    letter-spacing: 0;
+    word-spacing: 0;
+    line-height: 1.4em;
+
+}
+
+.box-1{
+    border: 2px solid rgb(64, 64, 64, .9);     /* Sirve para colocarle un borde seguido */
+    background-color: rgba(22, 22, 255, 0.92);
+    margin-bottom: 20px;
+}
+.box-2{
+    border: 2px dashed rgba(0, 0, 0, 0.9);    /* Sirve para colocarle un borde que sea con rayitas */
+    background-color: rgb(170, 0, 255);
+    margin-bottom: 20px;
+}
+
+.box-3{
+    border: 2px dotted rgba(0, 0, 0, 0.9);    /* Sirve para colocarle un borde que sea con puntos */
+    background-color: cyan;
+    margin-bottom: 20px;
+}
+
+.box-4{
+    border: 2px double rgba(0, 0, 0, 0.9);     /* Sirve para colocarle un borde con doble linea como si fuera un marco*/
+    background-color: rgb(0, 255, 26);
+}
