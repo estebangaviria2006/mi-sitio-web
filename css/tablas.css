@@ -1,0 +1,30 @@
+*{
+    font-family: sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 10px 15px 8px 15px;
+    text-align: center;
+    justify-content: center;
+}
+
+.table-box {
+    display: flex;
+    justify-content: center;
+}
+
+.dc-color {
+    background-color: darkcyan;
+    border-top-left-radius: 20px;
+    color: white;
+}
+
+.dc-rojo {
+    background-image: url(../img/check-error.png);
+    background-repeat: no-repeat;
+    text-align: center;
+}
