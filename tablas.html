@@ -9,31 +9,63 @@
 </head>
 <a href="index.html">Inicio</a>
 <body>
-    <h1>Tabla</h1>
+    <h1>Programación de canales </h1>
     <div class="table-box">
-    <table>
-        <tr>
-            <th class="dc-color">Paquete</th>
-            <th>Programación</th>
-            <th>Plan Basico</th>
-            <th>Plan silver</th>
-            <th>Plan golden</th>
-            <th>Plan Titanio</th>
-        </tr>
+        <table>
+            <tr><!-- tr es fila de tabla -->
+                <th class="cd-color">Paquete</th>
+                <th class="cd-color1">Programación</th>
+                <th class="cd-color2">Plan Basic</th> <!-- th es encabezado de tabla -->
+                <th class="cd-color3">Plan Silver</th>
+                <th class="cd-color4">Plan Golden</th>
+                <th class="cd-color5">Plan Titanio</th>
+            </tr>
+            <tr>
+                <td class="cd-color1" rowspan="2">Discovery</td>
+                <td class="cd-color1">Discovery Channel</td>
+                <td class="cd-color6" colspan="4">SI</td>    
+            </tr>
+            <tr>
+                <td class="cd-color1">Discovery World</td>
+                <td class="cd-color6" colspan="2">NO</td>
+                <td class="cd-color6" colspan="2">SI</td>
 
-         <tr>
-        <td rowspan="2">Discovery</td>
-        <td>Discovery channel</td>
-        <td colspan="4">Si</td>
-        </tr>
-
-        <tr>
-            <td>Discovery World</td>
-            <td class="dc-rojo"></td>
-            <td colspan="2">Si</td>
-        </tr>
-
-    </table>
+            </tr>
+            <tr>
+                <td class="cd-color1"> No aplica</td> <!-- td es tabla de datos -->
+                <td class="cd-color1" >Discovery Channel</td>
+                <td class="cd-color6" colspan="4">SI</td>    
+            </tr>
+            <tr>
+                <td class="cd-color1" >No aplica</td>
+                <td class="cd-color1" >Animal Planet</td>
+                <td class="cd-color6 , X">X</td>
+                <td class="cd-color6 , X">X</td>
+                <td class="cd-color6"><img src="img/check.png" alt=""></td>
+                <td class="cd-color6"><img src="img/check.png" alt=""></td>
+            </tr>
+            <tr>
+                <td class="cd-color1" rowspan="3">HBO</td>
+                <td class="cd-color1"> HBO Family</td>
+                <td class="cd-color6 , X">X</td>
+                <td class="cd-color6 , X">X</td>
+                <td class="cd-color6 , X">X</td>
+                <td class="cd-color6"><img src="img/check.png" alt=""></td>
+            </tr>
+            <tr>
+                <td class="cd-color1"> HBO Classic</td>
+                <td class="cd-color6">NO</td>
+                <td class="cd-color6">NO</td>
+                <td class="cd-color6">NO</td>
+                <td class="cd-color6">SI</td>
+            </tr>
+                <td class="cd-color1" >HBO Comedy</td>
+                <td class="cd-color6">NO</td>
+                <td class="cd-color6">NO</td>
+                <td class="cd-color6">NO</td>
+                <td class="cd-color6">SI</td>
+            </tr>
+        </table>
 </div>
 </body>
 </html>
