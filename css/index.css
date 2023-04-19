@@ -3,7 +3,8 @@ body {
    padding: 0;
    justify-content: center;
    align-items: center;
-   background-image: url(../img/whit.jpg);
+   background-image: url(../img/juego.jpg);
+   color: white;
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment: fixed;
@@ -14,7 +15,7 @@ body {
     position: relative;
     display: inline-block;
     padding: 15px 30px;
-    color: black;
+    color: white;
     letter-spacing: 4px;
     font-size: 20px;
     text-decoration: none;
