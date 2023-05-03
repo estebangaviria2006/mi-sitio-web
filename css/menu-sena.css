@@ -1,0 +1,41 @@
+nav{
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+ul{
+    list-style: none;
+    padding: 20px;
+    background-color: rgb(213, 216, 216);
+}
+a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:13px;
+    
+
+}
+
+ul:hover {
+
+
+cursor: pointer;
+}
+
+
+.nav1 {
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+}
+
+ul:hover {
+    
+    cursor: pointer;
+}
+
+.ul1{
+    background-color: rgb(213, 216, 216);
+    overflow: auto;
+}
