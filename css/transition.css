@@ -1,0 +1,14 @@
+.box-1 {
+    width: 400px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 25px;
+    transition: width 3000ms;
+    position: fixed;
+    left: -380px;
+}
+
+.box-1:hover {
+  cursor: pointer;
+  background-color: blueviolet;
+}
