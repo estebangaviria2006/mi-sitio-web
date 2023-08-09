@@ -72,3 +72,7 @@ grid-gap: 10px 20px;
          url('../fonts/waltographUI.ttf') format('truetype');
   }
 
+  .fuentes {
+    font-family: Waltograph;
+}
+
