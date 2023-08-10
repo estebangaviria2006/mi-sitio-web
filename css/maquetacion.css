@@ -10,20 +10,20 @@
 }
 .header{
     grid-area: cabeza;
-    background-color: goldenrod;
+    background-color: rgb(218, 32, 32);
     border-radius: 20px;
-    box-shadow: 10px 10px 10px;
+    box-shadow: 4px 7px 10px;
 }
 .img-principal{
     grid-area: imagen-prin;
-    background-color: rgb(36, 146, 3);
+    background-color: darkcyan;
     border-radius: 20px;
-    box-shadow: 10px 10px 10px;
+    box-shadow: 4px 7px 10px;
 }
 .img-articulo{
     background-color: rgb(64, 64, 64,.9);
     border-radius: 40px;
-    box-shadow: 10px 10px 10px;
+    box-shadow: 4px 7px 10px;
 }
 .one{
     grid-area: aticulo1;
