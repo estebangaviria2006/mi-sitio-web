@@ -1,124 +1,130 @@
-.mainbox{
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
     display: grid;
-    grid-template:  "empty-left cabeza        empty         empty       empty-right " 150px
-                    "empty-left imagen-prin  imagen-prin  imagen-prin   empty-right "700px
-                    "empty-left aticulo1     aticulo2      aticulo3     empty-right " 350px
-                    "empty-left txt-art1     txt-art2      txt-art3     empty-right " 400px
-                    "empty-left aticulo4     aticulo5      aticulo6     empty-right " 350px
-                    "empty-left txt-art4     txt-art5      txt-art6     empty-right " 400px/
-                     200px        420px       420px         420px         200px;
-    grid-gap: 50px;
-           
+    width: 100%;
+    grid-template: "empty-let     main-page                empty-right" 100vh/
+                 minmax(50px,1fr)       minmax(900px,1200px)       minmax(50px,1fr)             ;
 }
-.header{
-    grid-area: cabeza;
-    background-color: rgb(202, 25, 25);
-    border-radius: 20px;
-  
+.main-page{
+    grid-area: main-page;
 }
-.img-principal{
-    grid-area: imagen-prin;
-    background-color: darkcyan;
-    border-radius: 20px;
-   
+header{
+    display: grid;
+    gap: 30px;
+    margin-top: 50px;
+    grid-template:" logo    main-menu"80px/
+                    150px       minmax(700px,100%);
 }
-.img-articulo{
-    background-color: rgb(59, 57, 57);
-    border-radius: 40px;
-
+.logo{
+    border-radius: 15px;
+    grid-area: logo;
+    background-color: brown;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
-.one{
-    grid-area: aticulo1;
+.main-menu{
+    grid-area: main-menu ;
+    background-color: rgb(30,167,69);
 }
-.two{
-    grid-area: aticulo2;
-}
-.three{
-    grid-area: aticulo3;
-}
-.four{
-    grid-area: aticulo4;
-    
-}
-.five{
-    grid-area: aticulo5;
-}
-.six{
-    grid-area: aticulo6;
-}
-/*     .texto-articulo{
-        border: 1px solid black;
-        border-radius: 40px;
-       
-
-    } */
-.art1{
-    grid-area: txt-art1;
-}
-.art2{
-    grid-area: txt-art2;
-}
-.art3{
-    grid-area: txt-art3;
-}
-.art4{
-    grid-area: txt-art4;
-}
-.art5{
-    grid-area: txt-art5;
-}
-.art6{
-    grid-area: txt-art6;
-}
-.texto{
-    height: 100%;
+.style-tex{
+    font-family: verdana,sans-serif;
+    font-size: 1.6em;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5em;
 }
-.txt{
-    padding: 5px;
-    font-size: 1.8em;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-@media  only screen and  (max-width:1629px){
-     .mainbox{
+.main-content{
     display: grid;
-    width:  100%;
-        grid-template:  "empty-left  cabeza        empty         empty      empty-right" 150px
-                        "empty-left  imagen-prin  imagen-prin  imagen-prin  empty-right" 210px
-                        "empty-left  aticulo1     aticulo2      aticulo3    empty-right" 210px
-                        "empty-left  txt-art1     txt-art2      txt-art3    empty-right" 210px
-                        "empry-left  txt-art4     txt-art5      txt-art6    empty-right" 210px
-                        "empry-left  txt-art4     txt-art5      txt-art6    empty-right" 210px/
-                         50px        280px         280px      280px    80px;
-        grid-gap: 50px;
-     }          
-    }
-
-@media  only screen and  (max-width:1100px){
-        .mainbox{
-       display: grid;
-       width:  100%;
-           grid-template: "cabeza " 20%
-                           "imagen-prin"25%
-                           "aticulo1 "25%
-                           "txt-art1"25%
-                           "aticulo2 "25%
-                           "txt-art2"25%
-                           "aticulo3 "25%
-                           "txt-art3"25%
-                           "aticulo4 "25%
-                           "txt-art4"25%
-                           "aticulo5 "25%
-                           "txt-art5"25%
-                           "aticulo6 "25%
-                           "txt-art6"25%/
-                            100%        100%          100% ;
-           grid-gap: 35px;
-                 
-       }
-
+    margin-top:15px ;
+    gap: 40px 70px ;
+    grid-template: "main-img  main-img  main-img" 600px
+                     "articulo-1   articulo-2    articulo-3 " 
+                     "articulo-4   articulo-5    articulo-6 "450px/
+                      1fr            1fr             1fr;
 }
+.main-img{
+    grid-area: main-img ;
+    background-color: darkcyan;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+.articulo-1{
+    grid-area: articulo-1;
+}
+.articulo-2{
+    grid-area: articulo-2;
+}
+.articulo-3{
+    grid-area: articulo-3;
+}
+.articulo-4{
+    grid-area: articulo-4;
+}
+.articulo-5{
+    grid-area: articulo-5;
+}
+.articulo-6{
+    grid-area: articulo-6;
+}
+.img-articullo{
+    height: 350px;
+    background-color: rgb(64,64,64.8);
+    border-radius: 15px;
+}
+.style-tex-img{
+    text-align: center;
+    font-size: 1.2em;
+    color:  rgb(64,64,64.9);
+    font-family: verdana, sans-serif;
+    font-weight: 2em;
+    text-align: justify;
+}
+@media only screen and (max-width: 452px) {
+    body {
+        grid-template:
+          "main-page"
+          auto
+          "main-page"
+          auto / 100%;
+    }
+    
+    .main-page {
+        margin: 20px;
+      }
+      header{
+        grid-template: "logo    main-menu"80px/
+                        100px       minmax(50px , 500px);
+        justify-content: center;
+      }
+      .main-content{
+        grid-template: 
+        "main-img"
+        300px
+        "articulo-1"
+        auto
+        "articulo-2"
+        auto
+        "articulo-3"
+        auto
+        "articulo-4"
+        auto
+        "articulo-5"
+        auto
+        "articulo-6"
+        auto / 100%;
+      }
+      .img-articullo{
+        height: 200px;
+      }
+}
+
+
