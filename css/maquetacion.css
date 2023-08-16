@@ -2,28 +2,30 @@
     display: grid;
     grid-template:  "empty-left cabeza        empty         empty       empty-right " 150px
                     "empty-left imagen-prin  imagen-prin  imagen-prin   empty-right "700px
-                    "empty-left aticulo1     aticulo2      aticulo3     empty-right " 400px
-                    "empty-left txt-art1     txt-art2      txt-art3     empty-right " 500px/
+                    "empty-left aticulo1     aticulo2      aticulo3     empty-right " 350px
+                    "empty-left txt-art1     txt-art2      txt-art3     empty-right " 400px
+                    "empty-left aticulo4     aticulo5      aticulo6     empty-right " 350px
+                    "empty-left txt-art4     txt-art5      txt-art6     empty-right " 400px/
                      200px        420px       420px         420px         200px;
     grid-gap: 50px;
            
 }
 .header{
     grid-area: cabeza;
-    background-color: rgb(218, 32, 32);
+    background-color: rgb(202, 25, 25);
     border-radius: 20px;
-    box-shadow: 4px 7px 10px;
+  
 }
 .img-principal{
     grid-area: imagen-prin;
     background-color: darkcyan;
     border-radius: 20px;
-    box-shadow: 4px 7px 10px;
+   
 }
 .img-articulo{
-    background-color: rgb(64, 64, 64,.9);
+    background-color: rgb(59, 57, 57);
     border-radius: 40px;
-    box-shadow: 4px 7px 10px;
+
 }
 .one{
     grid-area: aticulo1;
@@ -33,6 +35,16 @@
 }
 .three{
     grid-area: aticulo3;
+}
+.four{
+    grid-area: aticulo4;
+    
+}
+.five{
+    grid-area: aticulo5;
+}
+.six{
+    grid-area: aticulo6;
 }
 /*     .texto-articulo{
         border: 1px solid black;
@@ -48,6 +60,15 @@
 }
 .art3{
     grid-area: txt-art3;
+}
+.art4{
+    grid-area: txt-art4;
+}
+.art5{
+    grid-area: txt-art5;
+}
+.art6{
+    grid-area: txt-art6;
 }
 .texto{
     height: 100%;
@@ -69,7 +90,9 @@
         grid-template:  "empty-left  cabeza        empty         empty      empty-right" 150px
                         "empty-left  imagen-prin  imagen-prin  imagen-prin  empty-right" 210px
                         "empty-left  aticulo1     aticulo2      aticulo3    empty-right" 210px
-                        "empty-left  txt-art1     txt-art2      txt-art3    empty-right" 210px/
+                        "empty-left  txt-art1     txt-art2      txt-art3    empty-right" 210px
+                        "empry-left  txt-art4     txt-art5      txt-art6    empty-right" 210px
+                        "empry-left  txt-art4     txt-art5      txt-art6    empty-right" 210px/
                          50px        280px         280px      280px    80px;
         grid-gap: 50px;
      }          
@@ -86,7 +109,13 @@
                            "aticulo2 "25%
                            "txt-art2"25%
                            "aticulo3 "25%
-                            "txt-art3"25%/
+                           "txt-art3"25%
+                           "aticulo4 "25%
+                           "txt-art4"25%
+                           "aticulo5 "25%
+                           "txt-art5"25%
+                           "aticulo6 "25%
+                           "txt-art6"25%/
                             100%        100%          100% ;
            grid-gap: 35px;
                  
