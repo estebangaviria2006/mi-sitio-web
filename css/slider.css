@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    height: 70px;
+    background-color: blue;
+}
+.page-box-slider {
+    width: 100%;
+    overflow-x: hidden;
+}
+.box-slider {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; /* mantiene el tamaño del contenido, En este caso la imagen */
+    height: calc(150vh - 75px);
+    position: relative;
+    z-index: 10;
+    transition: all 1s;
+    
+}
+.box-slider-1 {
+    left: 10%;
+
+}
+.box-slider-2 {
+    left: -72%; 
+   
+}
+.box-slider-3 {
+    left: -160%;
+}
+.icon-chevron-left, .icon-chevron-right {
+    color: rgb(0, 0, 0);
+    font-size: 2.5em;
+    position: relative;
+    top: calc((-102vh) + 350px);
+    z-index: 20;
+    padding: 0 50px;
+    
+}
+
+.icon-chevron-right {
+    display: flex;
+    justify-content: flex-end;
+    top: calc((-100vh) + 295px);
+    left: calc((+100vh) + 690px);
+}
+.icon-chevron-right, .icon-chevron-left {
+    cursor: pointer;
+}
+.box-signal {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 20px;
+    
+}
+.signal {
+    width: 120px;
+    height: 20px;
+    background-color: rgb(0, 98, 255);
+    border-radius: 5px;
+}
+.box-box-signal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -50px;
+    z-index: 150;
+}
+
+.signal-select {
+    background-color: aliceblue;
+}
