@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.merca{
+    width: 100%;
+    height: 100px;
+    background-color: #FFF159;
+}
+
+.logo{
+    margin-left: 350px;
+    margin-top: 10px;
+}

@@ -1,0 +1,108 @@
+*{
+    font-family: tahoma, sans-serif;
+}
+
+img {
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.box-main {
+    margin: 50px;
+    display: grid;
+    grid-template: "img-box-main empty"/ 
+                    435px         1fr;
+}
+
+.img-box-main{
+    display: grid;
+    grid-area: img-box-main;
+    width: 100%;
+    grid-template:  "img-box    img-box     img-box     img-box     img-box         img-box   img-box" 435px
+                    "empty-0    empty-0     empty-0     empty-0     empty-0         empty-0     empty-0" 30px
+                    "box-img1 empty-1     box-img2  empty-2     box-img3     empty-3   box-img4" 90px/ 
+                    90px       25px        90px       25px        90px           25px        90px;
+}
+
+.img-box {
+    grid-area: img-box;
+    width: 100%;
+}
+
+.img-mini {
+    width: 100%;
+}
+
+.img-mini-act {
+    opacity: .4;
+}
+
+
+.box-img1 {
+    grid-area: box-img1;
+}
+.box-img2 {
+    grid-area: box-img2;
+}
+.box-img3 {
+    grid-area: box-img3;
+}
+.box-img4 {
+    grid-area: box-img4;
+}
+
+.box-img-mini {
+    border: 3px solid black;
+    border-radius: 15px;
+} 
+
+.cant-box{
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.icon-op{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-weight: 900;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.subs-obj{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: rgb(255, 125, 26);
+    font-size: 3em;
+}
+
+.cant-obj{
+    color: black;
+    font-size: 1.6em;
+}
+
+.add-obj{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: rgb(255, 125, 26);
+    font-size: 2em;
+}
+
+.box-info{
+    display: flex;
+    grid-area: box-info;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+}
+.conted{
+    margin: -190px;
+    margin-left: 40px;
+}
+.buy-box{
+    margin-top: 350px;
+    margin-left: 50px;
+}
