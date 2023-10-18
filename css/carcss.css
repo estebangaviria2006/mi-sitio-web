@@ -37,6 +37,7 @@ img {
 }
 
 .box-img1 {
+    
     grid-area: box-img1;
 }
 .box-img2 {
@@ -45,12 +46,9 @@ img {
 .box-img3 {
     grid-area: box-img3;
 }
-.box-img4 {
-    grid-area: box-img4;
-}
 
 .box-img-mini {
-    border: 2px solid orange;
+    border: 2px solid blue;
     border-radius: 15px;
     z-index: -20;
 }
@@ -73,7 +71,7 @@ img {
     width: 50px;
     height: 50px;
     background-color: rgb(230,230,230);
-    color: rgb(255,125,26);
+    color: blue;
     justify-content: center;
     align-items:center;
     border: 1px solid white;
@@ -147,7 +145,7 @@ img {
 }
 
 .btn-style:hover{
-    color: orangered;
+    color: blue;
 }
 
 .btn-adelante:hover,.btn-atras:hover, .btn-x {
@@ -157,17 +155,18 @@ img {
 
 .fondo {
     display: grid;
-    margin-top: -100px;
+    margin-top: -80px; /* Este me sirve para bajarlos o subir las imagenes de los cositos pequeños */
+    margin-left: 100px;/* con este pude centrarlos adebajo de la imagen de la moto del segundo fondo */
     justify-content: center;
     width: 100%;
     grid-template: 
                     "box-img1 empty-1     box-img2  empty-2     box-img3     empty-3   box-img4" 90px/ 
-                    90px       25px        90px       25px        90px           25px        90px;
+                    100px       85px        100px       85px        100px           85px        100px;
 }
 
 
 .box-img-mini2 {
-    border: 3px solid orange;
+    border: 3px solid blue;
     border-radius: 15px;
 }
 
@@ -210,7 +209,7 @@ img {
 
 .mainheader{
     display: grid;
-    color: rgb(105,112,125);
+    color: rgb(96, 101, 109);
     width: 100%;
     align-self: center;
     justify-self: center;
@@ -224,10 +223,10 @@ img {
     display: grid;
     grid-area: img-box-main;
     width: 100px;
-    grid-template:  "img-box    img-box     img-box     img-box     img-box         img-box   img-box" 435px
-                    "empty-0    empty-0     empty-0     empty-0     empty-0         empty-0     empty-0" 30px
+    grid-template:  "img-box    img-box     img-box     img-box     img-box         img-box   img-box" 390px
+                    "empty-0    empty-0     empty-0     empty-0     empty-0         empty-0     empty-0" 10px
                     "box-img1 empty-1     box-img2  empty-2     box-img3     empty-3   box-img4" 90px/ 
-                    90px       25px        90px       25px        90px           25px        90px;
+                    120px       55px        120px       55px        120px           55px        30px;
 
 }
 
@@ -240,7 +239,7 @@ img {
 }
 
 .subheader:hover{
-    border-bottom: 3px solid orange;
+    border-bottom: 3px solid blue;
     transition: border-bottom 100ms;
     cursor: pointer;
 }
@@ -273,6 +272,7 @@ img {
 }
 
 .about{
+    right: 100px;
     width: 100%;
     grid-area: about;
 }
@@ -315,25 +315,29 @@ h2 {
 
 .orange {
     font-size: 0.7em;
-    color: #f07313;
+    color: blue;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 90px;
+    margin-top: 50px;
 }
 
 .confir-compra {
     width: 200px;
     margin: 0 15px;
+    top: 10px;
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: center;
-    background-color: #f07313;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
     border-radius: 10px;
-    box-shadow: 2px 5px 5px gainsboro;
+    box-shadow: 2px 5px 5px rgb(155, 162, 163);
     margin-top: 10px;
 }
 
 .confir-compra:hover {
-    background-color: gainsboro;
+    background-color: rgb(157, 157, 157);
     border-radius:  10px;
     transition: all 0.5s;
     text-align: center;
