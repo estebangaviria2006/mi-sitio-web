@@ -37,14 +37,16 @@
 /* informacion producto */
 .product-content {
     display: grid;
+   
     grid-template:   "empty-left    box-img-producto  box-info-producto  empty-right"
                     "empty-left  box-buttons-cantidad  box-info-producto  empty-right"/
                         20px               3fr              4fr              20px;
 }
 .box-img-producto {
     grid-area: box-img-producto;
-    background-color: rgb(138, 138, 138);
+    background-color: rgb(255, 255, 255);
     padding: 30px;
+   
     
 }
 .box-info-producto{
