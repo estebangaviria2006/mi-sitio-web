@@ -13,6 +13,41 @@ h1{
     grid-template: "img-box-main empty"/ 
                     500px         1fr;
 }
+.mainheader {
+    display: grid;
+    grid-template-columns: auto 1fr auto repeat(5, auto) auto;
+    align-items: center;
+    background-color: #232f3e;
+    height: 80px;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+}
+
+#search {
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+#search-button {
+    background-color: #FF9900;
+    color: black;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.subheader {
+    text-align: center;
+}
+
 
 .supermain{
     display: flex;
@@ -260,29 +295,35 @@ img {
 
 .collection {
     grid-area: collection;
+    color: white;
     width: 100%;
 }
 .men{
     width: 100%;
+    color: white;
     grid-area: men;
 }
 .woman {
     width: 100%;
+    color: white;
     grid-area: woman;
 }
 
 .about{
     right: 100px;
+    color: white;
     width: 100%;
     grid-area: about;
 }
 
 .contact {
     width: 100%;
+    color: white;
     grid-area: contact;
 }
 
 .cart{
+    color: white;
     grid-area: cart;
     font-size: 1.5em;
 }
