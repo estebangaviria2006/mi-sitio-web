@@ -1,0 +1,492 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+.mainheader {
+    width: 100%;
+    height: 80px;
+    display: grid;
+    color: #fff;
+    background-color: #141414;
+    grid-gap: 20px;
+    grid-template: "subheader   ubicacion   content-busqueda    hola    reembolso   idioma   idioma cart" /
+                    100px       90px        1fr                 120px   100px       100px   0    80px;
+}
+.subheader {
+    grid-area: subheader;
+    margin: 10px 0 10px 10px;
+    padding: 0;
+}
+.ubicacion {
+    grid-area: ubicacion;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.icono-ubicacion {
+    margin: 8px;
+}
+.pais {
+    font-weight: bold;
+}
+.content-busqueda {
+    grid-area: content-busqueda;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    margin: 10px 0;
+}
+#nombre, .input_buscador, .icon-busqueda {
+    height: 100%;
+    border: none;
+    margin: 1px;
+}
+#nombre {
+    width: 60px;
+    background-color: #e6e6e6;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.input_buscador {
+    width: calc(100% - 110px);
+}
+.icon-busqueda {
+    background-color: #ff9100;
+    width: 50px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+}
+.hola, .reembolso {
+    margin: 16px 0;
+}
+.hola {
+    grid-area: hola;
+}
+.reembolso {
+    grid-area: reembolso;
+}
+.cart, .idioma {
+    margin: 30px 0;
+}
+.idioma {
+    grid-area: idioma;
+    display: flex;
+    flex-direction: row;
+}
+.bandera {
+    width: 22px;
+    height: 15px;
+}
+.cart {
+    grid-area: cart;
+}
+.icono {
+    margin: 0 2px 0 -30px;
+}
+
+.lightbox {
+    background-color: rgba(53, 53, 53, 0.719);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-hidden {
+    visibility: hidden;
+}
+
+.btn-atras {
+    left: -25px;
+    z-index: 20;
+}
+.btn-adelante{
+    left: 95%;
+    z-index: 20;
+    top:152px;
+}
+.style-btn{
+    font-weight: 900;
+    font-size: 1.3em;
+}
+.btn-style:hover{
+    color: white;
+}
+.btn-adelante:hover,.btn-atras:hover, .btn-x {
+    cursor: pointer;
+}
+.fondo {
+    display: grid;
+    margin-top: -80px; /* Este me sirve para bajarlos o subir las imagenes de los cositos pequeños */
+    margin-left: 100px;/* con este pude centrarlos adebajo de la imagen de la moto del segundo fondo */
+    justify-content: center;
+    width: 100%;
+    grid-template: 
+                    "box-img1 empty-1     box-img2  empty-2     box-img3     empty-3   box-img4" 90px/ 
+                    100px       85px        100px       85px        100px           85px        100px;
+}
+.box-img-mini2 {
+    border: 3px solid blue;
+    border-radius: 15px;
+}
+.img-mini-act2 {
+    opacity: .7;
+}
+
+.lightbox-hidden {
+    visibility: hidden;
+}
+.btn-x {
+    background-color: rgb(65, 65, 65);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: -115px;
+    left:100%;
+    font-size: 0.8em;
+}
+.style-btn2{
+    font-weight: 900;
+    font-size: 0.8em;
+    top:2px;
+}
+
+
+.supermain{
+    display: flex;
+    justify-content: center;
+    margin-left: 140px;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+img {
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.img-box {
+    grid-area: img-box;
+    width: 100%;
+}
+
+.img-mini {
+    width: 100%;
+}
+
+.box-img1 {
+    
+    grid-area: box-img1;
+}
+.box-img2 {
+    grid-area: box-img2;
+}
+.box-img3 {
+    grid-area: box-img3;
+}
+
+.box-img-mini {
+    border: 2px solid blue;
+    border-radius: 15px;
+    z-index: -20;
+}
+
+.img-mini-act {
+    opacity: .4;
+    z-index: -20;
+}
+
+.buy-box{
+    display: block;
+    width: 100%;
+    margin-left: 20px;
+}
+
+
+.iconop{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(230,230,230);
+    color: black;
+    justify-content: center;
+    align-items:center;
+    border: 1px solid white;
+    font-weight: 900;
+    cursor: pointer;
+    display: flex;
+    margin-top: 10px;
+}
+.img-box-main{
+    display: grid;
+    grid-area: img-box-main;
+    width: 100px;
+    grid-template:  "img-box    img-box     img-box     img-box     img-box         img-box   img-box" 390px
+                    "empty-0    empty-0     empty-0     empty-0     empty-0         empty-0     empty-0" 10px
+                    "box-img1 empty-1     box-img2  empty-2     box-img3     empty-3   box-img4" 90px/ 
+                    120px       55px        120px       55px        120px           55px        30px;
+
+}
+
+.buy-box{
+    display: block;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.btn-menos{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    font-size: 1.8em;
+}
+
+.cant-obj {
+    font-size: 1.3em;
+    color: black;
+    font-weight: 900;
+}
+
+.btn-mas {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 1.8em;
+}
+
+.lightbox {
+    background-color: rgba(53, 53, 53, 0.719);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-lightbox{
+    width: 450px;
+    height: 600px;
+}
+
+.btn-style {
+    background-color: rgba(0, 0, 0, 0.346);
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    position: relative;
+    top:145px;
+
+}
+
+.btn-atras {
+    left: -25px;
+    z-index: 20;
+}
+
+.btn-adelante{
+    left: 95%;
+    z-index: 20;
+    top:100px;
+}
+
+.style-btn{
+    font-weight: 900;
+    font-size: 1.3em;
+}
+
+
+.btn-adelante:hover,.btn-atras:hover, .btn-x {
+    cursor: pointer;
+}
+.box-img-mini2 {
+    border: 3px solid blue;
+    border-radius: 15px;
+}
+
+.img-mini-act2 {
+    opacity: .7;
+}
+
+.img-main-light {
+    background-color: white;
+    position: relative;
+    top: -100px;
+    width: 100%;
+    border-radius: 20px;
+    z-index: 19;
+}
+
+.lightbox-hidden {
+    visibility: hidden;
+}
+
+.btn-x {
+    background-color: rgb(65, 65, 65);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: -115px;
+    left:100%;
+    font-size: 0.8em;
+}
+
+.style-btn2{
+    font-weight: 900;
+    font-size: 0.8em;
+    top:2px;
+}
+.box-img1 {
+    
+    grid-area: box-img1;
+}
+.box-img2 {
+    grid-area: box-img2;
+}
+.box-img3 {
+    grid-area: box-img3;
+}
+
+.box-img-mini {
+    border: 2px solid blue;
+    border-radius: 15px;
+    z-index: -20;
+}
+
+.img-mini-act {
+    opacity: .4;
+    z-index: -20;
+}
+
+.buy-box{
+    display: block;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.cant-box{
+    display: inline-flex; 
+}
+
+h2 {
+    width: 90%;
+    color: black;
+    font-size: 2.7rem;
+    font-weight: 700;
+}
+
+.txt {
+    color: rgb(123, 123, 125);
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    padding: 5px;
+    width: 100%;
+}
+
+.orange {
+    font-size: 1.1em;
+    color: blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 50px;
+}
+
+.confir-compra {
+    width: 200px;
+    margin: 0 15px;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px rgb(155, 162, 163);
+    margin-top: 10px;
+}
+
+.confir-compra:hover {
+    background-color: rgb(157, 157, 157);
+    border-radius:  10px;
+    transition: all 0.5s;
+    text-align: center;
+    justify-content: center;
+
+}
+
+
+.valor-total{
+    font-size: 1.7em;
+    padding: 20px;
+}
+
+.totales{
+    margin-top: 60px;
+}
+.lightbox {
+    background-color: rgba(53, 53, 53, 0.719);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box-main {
+    margin-top: 10px;
+    display: grid;
+    grid-template: "img-box-main empty"/ 
+                    500px         1fr;
+}
+
+/* Fuentes */
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/poppins-v20-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/poppins-v20-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}

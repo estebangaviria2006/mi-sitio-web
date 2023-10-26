@@ -2,19 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito</title>
-    <link rel="stylesheet" href="css/carcss.css">
-    <link rel="stylesheet" href="css/caricons.css">
+    <link rel="stylesheet" href="css/amazon.css">
+    <link rel="stylesheet" href="icons/all.css">
+    <title>Amazon</title>
 </head>
 <body>
+    <div class="mainheader">
+        <div class="subheader logo"><img style="margin-right: 600px;" src="img/Yamaha-logo.png" alt=""><strong style="color: white;"></strong></div>
+
+        
+        <div class="ubicacion">
+            <div class="icono-ubicacion"><i class="fa-solid fa-location-dot fa-beat"></i></div>
+            <div class="infor">
+                <div class="enviar">Enviar a</div>
+                <div class="pais">EE.UU</div>
+            </div>
+        </div>
+        
+
+        <div class="content-busqueda">
+            <select name="" id="nombre">
+                <option value="">Todos</option>
+                <option value="">Motos</option>
+                <option value="">Repuestos</option>
+            </select>
+            <input type="text" class="input_buscador" placeholder="Buscar yamaha">
+            <button class="icon-busqueda"><i class="search fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="hola">
+            <div class="saludo">Hello,sign in</div>
+            <div class="cuenta"><b>Accuont & lists</b></div>
+        </div>  
+        <div class="reembolso">
+            <div class="retornar">Returns</div>
+            <div class="orden"><b>& Orders</b></div>
+        </div>
+        <div class="idioma">
+            <img class="bandera" src="img/us.webp " alt="">
+            <div class="lengua"><b>USA</b></div>
+        </div>
+            
+        <div class="subheader cart"><i class="icono fa-solid fa-cart-shopping"></i>Carrito</div>
+   
+    </div>
+
     <div id="lightBox" class="lightbox lightbox-hidden">
         <div class="main-lightbox">
                 <div id="btnAtras"class="btn-style btn-atras"><i class="style-btn fa-solid fa-chevron-left"></i></div>
                         <div id="btnAdelante"class="btn-style btn-adelante"><i class="style-btn fa-solid fa-chevron-right"></i></div>
                         <div id="btnX" class="btn-x"><i class="style-btn2 fa-solid fa-x"></i></div>
+                        
                 <img id="imgEscPrin"class="img-main-light" src="img/XTZ 250-BLANCA.png" alt="">
+                
 
 
             <div class="fondo">
@@ -31,23 +72,11 @@
                 </div>
         </div>
     </div>
-    <div class="mainheader">
-        <div class="subheader logo"><img src="img/Yamaha-logo.png" alt=""><strong style="color: white;">CO</strong></div>
-        <div class="subheader search-box">
-            <input type="text" id="search" placeholder="Search...">
-            <button id="search-button">Search</button>
-        </div>
-            <div class="subheader collection">Collection</div>
-                <div class="subheader men">Cars</div>
-                        <div class="subheader woman">Warranty</div>
-                        <div class="subheader about">About</div>
-                    <div class="subheader contact">Contact</div>
-                <div class="subheader cart"><i class="fa-solid fa-cart-shopping"></i></div>
-   
-    </div>
+
     <div class="supermain">
         <div class="box-main">
             <div class="img-box-main">
+                
       
                 <img id="imgBox" class="img-box" src="img/XTZ 250-BLANCA.png" alt="">
                 
@@ -74,7 +103,7 @@
 
                 
                 <div id="Totales" class="totales">
-                    <h4>Cuantas desea comprar?</h4>
+                    <h4>¿Cuantas desea comprar?</h4>
                     <div class="valor-total" id="valorTotal">
                         <p>$26.000.000</p>
                     </div>
@@ -92,8 +121,6 @@
             </div>
         </div>
     </div>
-    
-    
+    <script src="js/amazon.js"></script>
 </body>
-<script src="js/carjs.js"></script>
 </html>
