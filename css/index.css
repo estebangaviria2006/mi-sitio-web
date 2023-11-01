@@ -1,5 +1,16 @@
 body{
   background-image: url(../img/icecube.jpg);
+  text-decoration: none;
+}
+
+h1{
+  color: white;
+  text-align: center;
+}
+
+h2{
+  color: white;
+  text-align: center;
 }
 .grid {
   display: flex;
@@ -10,12 +21,13 @@ body{
 .grid-item {
   margin: 10px;
   padding: 10px;
-  background: #FF6A00; /* Cambia el color de fondo a un tono neon */
+  background: #0059ff; /* Cambia el color de fondo a un tono neon */
   color: #fff;
   border: none;
   cursor: pointer;
   font-size: 16px;
   transition: background 0.3s;
+  text-decoration: none;
 }
 
 .grid-item:hover {
