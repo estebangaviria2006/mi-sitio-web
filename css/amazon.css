@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: poppins;
+    font-size: 15px;
 }
 .mainheader {
     width: 100%;
@@ -79,7 +80,10 @@
     width: 22px;
     height: 15px;
 }
+
+/* aqui le coloque el cursos pinter al carrito */
 .cart {
+    cursor: pointer;
     grid-area: cart;
 }
 .icono {
@@ -326,61 +330,6 @@ img {
     z-index: 19;
 }
 
-.lightbox-hidden {
-    visibility: hidden;
-}
-
-.btn-x {
-    background-color: rgb(65, 65, 65);
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    color: rgb(255, 255, 255);
-    position: relative;
-    top: -115px;
-    left:100%;
-    font-size: 0.8em;
-}
-
-.style-btn2{
-    font-weight: 900;
-    font-size: 0.8em;
-    top:2px;
-}
-.box-img1 {
-    
-    grid-area: box-img1;
-}
-.box-img2 {
-    grid-area: box-img2;
-}
-.box-img3 {
-    grid-area: box-img3;
-}
-
-.box-img-mini {
-    border: 2px solid blue;
-    border-radius: 15px;
-    z-index: -20;
-}
-
-.img-mini-act {
-    opacity: .4;
-    z-index: -20;
-}
-
-.buy-box{
-    display: block;
-    width: 100%;
-    margin-left: 20px;
-}
-
-.cant-box{
-    display: inline-flex; 
-}
 
 h2 {
     width: 90%;
@@ -389,46 +338,7 @@ h2 {
     font-weight: 700;
 }
 
-.txt {
-    color: rgb(123, 123, 125);
-    font-size: 1em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 10px;
-    padding: 5px;
-    width: 100%;
-}
 
-.orange {
-    font-size: 1.1em;
-    color: blue;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 50px;
-}
-
-.confir-compra {
-    width: 200px;
-    margin: 0 15px;
-    top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    cursor: pointer;
-    background-color: blue;
-    color: white;
-    border-radius: 10px;
-    box-shadow: 2px 5px 5px rgb(155, 162, 163);
-    margin-top: 10px;
-}
-
-.confir-compra:hover {
-    background-color: rgb(157, 157, 157);
-    border-radius:  10px;
-    transition: all 0.5s;
-    text-align: center;
-    justify-content: center;
-
-}
 
 
 .valor-total{
@@ -456,6 +366,163 @@ h2 {
     grid-template: "img-box-main empty"/ 
                     500px         1fr;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.vertical-separator {
+    width: 2px; /* Ancho de la línea vertical */
+    background-color: #000; /* Color de la línea (puedes cambiarlo) */
+    height: 90%; /* Altura del separador, 100% para que abarque toda la altura del contenedor */
+    position: absolute;
+    left: 70%; /* Puedes ajustar la posición izquierda/derecha */
+    top: 10;
+}
+
+/* modal */
+
+.box-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(0, 0, 0,.6);
+    z-index: 10;
+
+}
+.modal{
+    width: 90%;
+    height: 80%;
+    z-index: 20;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    display: grid;
+    grid-template: "box-main-img-modal  info-modal"     / 
+                            1fr           350px;
+
+}
+
+/* la x */
+.btn-close {
+   position: absolute;
+   top: 5px;
+   right: 10px;
+   font-size: 1.3em;
+   border: 3px solid rgb(0, 0, 0);
+   border-radius: 6px;
+   padding: 0 3px;
+   cursor: pointer;
+}
+.box-main-img-modal{
+    grid-area: box-main-img-modal;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-img-modal{
+    width: 40%;
+    height: auto;
+}
+.info-modal{
+    grid-area: info-modal;
+    padding: 65px 40px 20px 40px;
+
+}
+
+.txt-caracteristicas-modal {
+    
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 1.1em;
+
+}
+
+
+/* cuadritos imagenes chiquitas */
+.contenedor {
+    position: absolute;
+    top: 240px;
+    right: 1px;
+   /*  width: 3400px;
+    height: 1000px; */
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+    grid-template-columns: repeat(4, 60px);/* ancho */
+    grid-template-rows: repeat(6,60px) ;  /* alto */    /* tambien funciona el codigo   repeat(4, 100 px) */ /* 1fr  =   1fraccion */
+    grid-gap: 20px 24px;
+    }
+
+
+
+    /* Con este puedo acomodar el borde de los cuadritos pequeños */
+    .contenedor .inicio {
+        grid-column-start: 1;
+        background-color: rgb(255, 255, 255) ;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+        border: 1px solid rgb(93, 93, 93)  ;
+        border-radius: 3px;
+    }
+
+
+    /* Este es para el cosito de los cuadros pequeños cuando paso el mouse por encima, este solo funciona para un cuadrito */
+.contenedor .inicio:hover {
+    opacity: 0.7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+   /* Este es para el cosito de los cuadros pequeños cuando paso el mouse por encima, este funciona para todos los otros cuadritos*/
+    .contenedor .dia:hover {
+        opacity: 0.7;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+
+
+    
+    .box {
+        padding: 3px;
+        background-color: rgb(170, 170, 170);
+    
+    }
+
+    /* Con este puedo acomodar el borde de los cuadritos pequeños */
+    .dia {
+        background-color: rgb(255, 255, 255) ;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        color: white;
+        cursor: pointer;
+        border: 1px solid rgb(93, 93, 93)  ;
+       border-radius: 3px;
+    }
+
+    
 
 /* Fuentes */
 /* poppins-regular - latin */

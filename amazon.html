@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/amazon.css">
+    <link rel="shortcut icon" href="img/iconoAmazon.png" type="image/png">
     <link rel="stylesheet" href="icons/all.css">
     <title>Amazon</title>
 </head>
 <body>
     <div class="mainheader">
-        <div class="subheader logo"><img style="margin-right: 600px;" src="img/Yamaha-logo.png" alt=""><strong style="color: white;"></strong></div>
+        <div class="subheader logo"><img style="margin-right: 600px;" src="img/amazonPRIME.jpg" alt=""><strong style="color: white;"></strong></div>
 
         
         <div class="ubicacion">
@@ -23,11 +24,11 @@
 
         <div class="content-busqueda">
             <select name="" id="nombre">
-                <option value="">Todos</option>
-                <option value="">Motos</option>
-                <option value="">Repuestos</option>
+                <option value="">Todo</option>
+                <option value="">Camisas</option>
+                <option value="">Balones</option>
             </select>
-            <input type="text" class="input_buscador" placeholder="Buscar yamaha">
+            <input type="text" class="input_buscador" placeholder="Buscar Amazon">
             <button class="icon-busqueda"><i class="search fa-solid fa-magnifying-glass"></i></button>
         </div>
 
@@ -44,83 +45,41 @@
             <div class="lengua"><b>USA</b></div>
         </div>
             
-        <div class="subheader cart"><i class="icono fa-solid fa-cart-shopping"></i>Carrito</div>
+        <div class="subheader cart" id="openCart"><i class="icono fa-solid fa-cart-shopping"></i>Carrito</div>
    
     </div>
 
-    <div id="lightBox" class="lightbox lightbox-hidden">
-        <div class="main-lightbox">
-                <div id="btnAtras"class="btn-style btn-atras"><i class="style-btn fa-solid fa-chevron-left"></i></div>
-                        <div id="btnAdelante"class="btn-style btn-adelante"><i class="style-btn fa-solid fa-chevron-right"></i></div>
-                        <div id="btnX" class="btn-x"><i class="style-btn2 fa-solid fa-x"></i></div>
-                        
-                <img id="imgEscPrin"class="img-main-light" src="img/XTZ 250-BLANCA.png" alt="">
-                
+   
 
+    <div id="main-content" class="main-content"></div>
 
-            <div class="fondo">
-                    <div id="imgEsc1" class="box-img1">
-                            <img id="imgMiniEsc1" class="img-mini" src="img/XTZ 250-BLANCA.png" alt="mini-1">
-                    </div>
-                        <div id="imgEsc2" class="box-img2">
-                            <img id="imgMiniEsc2" class="img-mini" src="img/XTZ 250 NEGRA.png" alt="mini-2">
-                    </div>
-                        <div id="imgEsc3" class="box-img3">
-                            <img id="imgMiniEsc3" class="img-mini" src="img/xtz 250-azul.png" alt="mini-3">
-                    </div>
-                       
+    <div class="box-modal lightbox-hidden " id="cartModal"> 
+        <div class="modal">
+            <div id="btnClose" class="btn-close">
+                <i class="style-btn2 fa-solid fa-x"></i> <!-- la x -->
+            </div>
+            <div class="box-main-img-modal">
+                <img class="main-img-modal" src="img/camisaCR71.jpg" alt=""> <!-- imagen grandota -->
+            </div>
+            <div class="info-modal">
+                <span class="txt-caracteristicas-modal">
+                    Camisetas de fútbol No.7, camiseta de fútbol, 
+                    fanáticos de los deportes al aire libre, camiseta para niños y jóvenes, calcetines de camiseta de fútbol, conjunto de regalo
+                </span>
+                <!-- cuadros imagenes chiquitas -->
+                <div class="contenedor">
+                    <div class="box dia"><img src="img/camisaCR71.jpg" alt=""></div>
+                    <div class="box dia"><img src="img/camisaCR72.jpg" alt=""></div>
+                    <div class="box dia"><img src="img/camisaCR73.jpg" alt=""></div>
+                    <br>
+                    <div class="box dia"><img src="img/camisaCR74.jpg" alt=""></div>
+                    <div class="box dia"><img src="img/camisaCR77.jpg" alt=""></div>
+                    <div class="box dia"><img src="img/camisaCR78.jpg" alt=""></div>
                 </div>
+            </div>
         </div>
     </div>
-
-    <div class="supermain">
-        <div class="box-main">
-            <div class="img-box-main">
-                
-      
-                <img id="imgBox" class="img-box" src="img/XTZ 250-BLANCA.png" alt="">
-                
     
-                <div id="boxImgBox1" class="box-img1">
-                    <img id="imgMini1" class="img-mini" src="img/XTZ 250-BLANCA.png" alt="mini-1">
-                </div>
-                <div id="boxImgBox2" class="box-img2">
-                    <img id="imgMini2" class="img-mini" src="img/XTZ 250 NEGRA.png" alt="mini-2">
-                </div>
-                <div id="boxImgBox3" class="box-img3">
-                    <img id="imgMini3" class="img-mini" src="img/xtz 250-azul.png" alt="mini-3">
-                </div>
-                
-            </div>
-
-            <div class="buy-box">
-                <p class="orange"><b>Yamaha</b></p>
-                <h2>Limited Edition</h2>
-                <p class="txt">La XTZ 250 posee un motor de 249 cc, 4 tiempos, un cilindro <br>
-                SOHC refrigerado por aire y aceite, el cual alcanza 20,4 HP a 8.000 rpm <br>
-                20,5 Nm de torque a 6.500 rpm.</p>
-                
-
-                
-                <div id="Totales" class="totales">
-                    <h4>¿Cuantas desea comprar?</h4>
-                    <div class="valor-total" id="valorTotal">
-                        <p>$26.000.000</p>
-                    </div>
-                </div>
-                <div id="cantBox"class="cant-box">
-                    <div id="menos" class="iconop btn-menos">-</div>
-                    <div id="canOb" class="iconop cant-obj"><span id="numeroElementos">1</span></div>
-                    <div id="mas" class="iconop btn-mas">+</div>
-
-                    <div id="ConfirCompra" class="confir-compra">
-                    
-                        <p class="text-com"><i class="compra fa-solid fa-cart-plus"></i><span class="espacio"></span> Añadir al carrito</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <script src="js/amazon.js"></script>
 </body>
 </html>

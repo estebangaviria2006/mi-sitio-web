@@ -1,35 +1,36 @@
 body{
-  background-image: url(../img/icecube.jpg);
-  text-decoration: none;
-}
-
-h1{
-  color: white;
-  text-align: center;
-}
-
-h2{
-  color: white;
-  text-align: center;
-}
-.grid {
+  padding: 0;
+  margin: 0;
+  background-color: #000;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
+  min-height: 100vh
 }
-
-.grid-item {
-  margin: 10px;
-  padding: 10px;
-  background: #0059ff; /* Cambia el color de fondo a un tono neon */
+h1{
+  color: #484848;
+  font-size: 150px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 7px;
+  cursor: pointer
+}
+h1 span{
+  transition: .5s linear
+}
+h1:hover span:nth-child(1){
+  margin-right: 5px
+}
+h1:hover span:nth-child(2){
+  margin-left: 30px
+}
+h1:hover span{
   color: #fff;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background 0.3s;
-  text-decoration: none;
+  text-shadow: 0 0 10px #fff,
+               0 0 20px #fff, 
+               0 0 40px #fff;
 }
-
-.grid-item:hover {
-  background: #FFD100; /* Cambia el color de fondo al pasar el mouse */
+.a{
+  text-decoration: none;
+  color: white;
 }

@@ -1,0 +1,66 @@
+body {
+    background-image: url(../img/2ARRRR.jpg);
+    text-decoration: none;
+  }
+  
+  h1 {
+    color: black;
+    text-align: center;
+  }
+  
+  h2 {
+    color: black;
+    text-align: center;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .image {
+    width: 250px; /* Ajusta el tamaño de la imagen según tus preferencias */
+    border-radius: 15px;
+  }
+  
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .grid-item {
+    margin: 10px;
+    padding: 10px;
+    background: #0059ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background 0.3s;
+    animation: move 2s linear infinite; /* Animación para mover los botones */
+  }
+  
+  .grid-item:hover {
+    background: #9c9c9c;
+    animation: none; /* Detiene la animación al pasar el mouse */
+  }
+  
+  @keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px); /* Mueve los botones horizontalmente */
+    }
+    100% {
+        transform: translateX(0);
+    }
+  }
+
+
+
+
+
+
