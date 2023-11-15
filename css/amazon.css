@@ -458,6 +458,75 @@ h2 {
 }
 
 
+.main-content {
+    width: 100%;
+    height: 100%;
+    z-index: 10; 
+    border-radius: 10px;
+    position: absolute;
+    display: grid;
+    grid-template: "principal-container-img     principal-box-main-img-modal    principal-info-modal     pricipal-sub-contenedor  "   /
+                             150px                       1fr                           650px                        300px ;
+ }
+ .txt-caracteristicas-titulo{
+    font-size: 1.1em;
+    text-align: justify;
+    line-height: 1.1em;
+    font-weight: 450;
+ }
+.principal-container-img {
+    grid-area: principal-container-img;
+    margin-top: 50px;
+    
+   
+}
+.principal-box-main-img-modal {
+    grid-area: principal-box-main-img-modal;
+    width: 100%;
+    height: 120%;
+    display: flex;  
+    justify-content: center;
+    padding-top: 0%;
+}
+.principal-info-modal {
+    grid-area: principal-info-modal;
+    padding: 30px 60px 30px 30px;
+    margin-right: 250px;
+}
+.principal-main-img-modal {
+    width: 50%;
+    height: 50%;
+    margin-top: 60px;
+   
+}
+.principal-article {
+    border-radius: 10px;
+   border: solid 1px rgb(77, 77, 79);
+    height: 50px;
+    width: 50px;
+    margin: 15px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article:hover {
+cursor: pointer;
+border: 2px solid rgb(9, 89, 159);
+
+}
+
+
+.img-mini-principal {
+    width: 49%;
+    cursor: pointer; 
+  }
+  
+
+
+
+
+
 /* cuadritos imagenes chiquitas */
 .contenedor {
     position: absolute;
