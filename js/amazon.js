@@ -125,3 +125,86 @@ miniaturas.forEach((miniatura) => {
   });
 });
   
+let start1 = document.getElementById("start1");
+let start2 = document.getElementById("start2");
+let start3 = document.getElementById("start3");
+let start4 = document.getElementById("start4");
+let start5 = document.getElementById("start5");
+let puntuacion = parseFloat(document.getElementById("puntuacion").innerText);
+
+if (puntuacion >= 0 && puntuacion <= 0.2) {
+    asignarClaseEstrella(start1, "estrella fa-regular fa-star");
+    asignarClaseEstrella(start2, "estrella fa-regular fa-star");
+    asignarClaseEstrella(start3, "estrella fa-regular fa-star");
+    asignarClaseEstrella(start4, "estrella fa-regular fa-star");
+    asignarClaseEstrella(start5, "estrella fa-regular fa-star");
+} else if (puntuacion > 0.2 && puntuacion <= 0.7) {
+    asignarClaseEstrella(start1, "estrella fa-solid fa-star-half-stroke");
+    asignarClaseEstrella(start2, "estrella fa-regular fa-star");
+    asignarClaseEstrella(start3, "estrella fa-regular fa-star");
+    asignarClaseEstrella(start4, "estrella fa-regular fa-star");
+    asignarClaseEstrella(start5, "estrella fa-regular fa-star");
+} else if (puntuacion > 0.7 && puntuacion <= 1.2) {
+    asignarClaseEstrella(start1, "estrella fa-solid fa-star");
+    asignarClaseEstrella(start2, "estrella fa-regular fa-star");
+    asignarClaseEstrella(start3, "estrella fa-regular fa-star");
+    asignarClaseEstrella(start4, "estrella fa-regular fa-star");
+    asignarClaseEstrella(start5, "estrella fa-regular fa-star");
+} else if (puntuacion > 1.2 && puntuacion <= 1.7) {
+    asignarClaseEstrella(start1, "estrella fa-solid fa-star");
+    asignarClaseEstrella(start2, "estrella fa-solid fa-star-half-stroke");
+    asignarClaseEstrella(start3, "estrella fa-regular fa-star");
+    asignarClaseEstrella(start4, "estrella fa-regular fa-star");
+    asignarClaseEstrella(start5, "estrella fa-regular fa-star");
+} else if (puntuacion > 1.7 && puntuacion <= 2.2) {
+    asignarClaseEstrella(start1, "estrella fa-solid fa-star");
+    asignarClaseEstrella(start2, "estrella fa-solid fa-star");
+    asignarClaseEstrella(start3, "estrella fa-regular fa-star");
+    asignarClaseEstrella(start4, "estrella fa-regular fa-star");
+    asignarClaseEstrella(start5, "estrella fa-regular fa-star");
+} else if (puntuacion > 2.2 && puntuacion <= 2.7) {
+    asignarClaseEstrella(start1, "estrella fa-solid fa-star");
+    asignarClaseEstrella(start2, "estrella fa-solid fa-star");
+    asignarClaseEstrella(start3, "estrella fa-solid fa-star-half-stroke");
+    asignarClaseEstrella(start4, "estrella fa-regular fa-star");
+    asignarClaseEstrella(start5, "estrella fa-regular fa-star");
+} else if (puntuacion > 2.7 && puntuacion <= 3.2) {
+    asignarClaseEstrella(start1, "estrella fa-solid fa-star");
+    asignarClaseEstrella(start2, "estrella fa-solid fa-star");
+    asignarClaseEstrella(start3, "estrella fa-solid fa-star");
+    asignarClaseEstrella(start4, "estrella fa-regular fa-star");
+    asignarClaseEstrella(start5, "estrella fa-regular fa-star");
+} else if (puntuacion > 3.2 && puntuacion <= 3.7) {
+    asignarClaseEstrella(start1, "estrella fa-solid fa-star");
+    asignarClaseEstrella(start2, "estrella fa-solid fa-star");
+    asignarClaseEstrella(start3, "estrella fa-solid fa-star");
+    asignarClaseEstrella(start4, "estrella fa-solid fa-star-half-stroke");
+    asignarClaseEstrella(start5, "estrella fa-regular fa-star");
+} else if (puntuacion > 3.7 && puntuacion <= 4.2) {
+    asignarClaseEstrella(start1, "estrella fa-solid fa-star");
+    asignarClaseEstrella(start2, "estrella fa-solid fa-star");
+    asignarClaseEstrella(start3, "estrella fa-solid fa-star");
+    asignarClaseEstrella(start4, "estrella fa-solid fa-star");
+    asignarClaseEstrella(start5, "estrella fa-regular fa-star");
+} else if (puntuacion > 4.2 && puntuacion <= 4.7) {
+    asignarClaseEstrella(start1, "estrella fa-solid fa-star");
+    asignarClaseEstrella(start2, "estrella fa-solid fa-star");
+    asignarClaseEstrella(start3, "estrella fa-solid fa-star");
+    asignarClaseEstrella(start4, "estrella fa-solid fa-star");
+    asignarClaseEstrella(start5, "estrella fa-solid fa-star-half-stroke");
+} else if (puntuacion > 4.7 && puntuacion <= 5) {
+    asignarClaseEstrella(start1, "estrella fa-solid fa-star");
+    asignarClaseEstrella(start2, "estrella fa-solid fa-star");
+    asignarClaseEstrella(start3, "estrella fa-solid fa-star");
+    asignarClaseEstrella(start4, "estrella fa-solid fa-star");
+    asignarClaseEstrella(start5, "estrella fa-solid fa-star");
+}
+
+function asignarClaseEstrella(estrella, clase) {
+    estrella.setAttribute("class", "estrella " + clase);
+}
+
+
+
+
+

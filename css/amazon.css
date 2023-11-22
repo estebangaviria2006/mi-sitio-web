@@ -5,6 +5,9 @@
     font-size: 15px;
     overflow: hidden;
 }
+body {
+    padding-bottom: 100px;
+}
 .mainheader {
     width: 100%;
     height: 80px;
@@ -13,7 +16,7 @@
     background-color: #141414;
     grid-gap: 20px;  /* aqui acomode el pedazo de amazon y de carrito que se me comia */
     grid-template: "subheader   ubicacion   content-busqueda    hola    reembolso   idioma    cart" /
-                    140px       90px        1fr                 120px   100px       100px     120px;
+                    140px       90px        1fr                 120px   100px       100px     140px;
 }
 .subheader {
     grid-area: subheader;
@@ -467,8 +470,12 @@ h2 {
     border-radius: 10px;
     position: absolute;
     display: grid;
-    grid-template: "principal-container-img     principal-box-main-img-modal    principal-info-modal     pricipal-sub-contenedor  "   /
-                             150px                       1fr                           650px                        300px ;
+    grid-template: "principal-container-img     principal-box-main-img-modal    principal-info-modal     info-precio-produc  "   /
+                             150px                       1fr                           1fr                        310px ;
+ }
+
+ .txt-caracteristicas-titulo, .txt-a, .price, .ultimo, ul, .details, .box-estrellas {
+    padding: 0 20px;
  }
 
 .principal-container-img {
@@ -643,7 +650,7 @@ border: 2px solid rgb(9, 89, 159);
         text-decoration: none;
         font-size: 1.1em;
         font-family: 'Times New Roman', Times, serif;
-        color: #30598d;
+        color: #379694;
       }
       
       .txt-a:hover {
@@ -654,7 +661,6 @@ border: 2px solid rgb(9, 89, 159);
       
     .price {
         margin-top: 20px;
-        padding: 5px;
       }
       
       .old-price {
@@ -697,6 +703,18 @@ border: 2px solid rgb(9, 89, 159);
       .shipping {
         margin-top: 20px;
       }
+
+      .estrella{
+        color: rgb(255, 164, 28);
+        font-size: 1.1em;
+      }
+      .box-estrellas{
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+        /* background-color: #75e4fc; */
+      }
+      
     
   .Negrita{
     font-weight: bolder;
@@ -739,36 +757,6 @@ border: 2px solid rgb(9, 89, 159);
     font-size: 13px;
   }
 
-  .rating {
-    unicode-bidi: bidi-override;
-    direction: rtl;
-    font-size: 30px;
-    color: #ccc;
-    display: inline-block;
-  }
-
-  .rating input {
-    display: none;
-  }
-
-  .rating label {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    color: #ccc; /* Color predeterminado para estrella no seleccionada */
-  }
-
-  .rating label::before {
-    content: '\2605'; /* Estrella en blanco */
-    position: absolute;
-    opacity: 0;
-    transition: opacity 0.25s;
-  }
-
-  .rating input:checked ~ label:before {
-    opacity: 1;
-    color: #ffcc00; /* Color amarillo para estrella seleccionada */
-  }
   /* cuadritos imagenes chiquitas */
   .contenedor {
       position: absolute;
@@ -868,7 +856,239 @@ border: 2px solid rgb(9, 89, 159);
        border-radius: 3px;
     }
 
+    :root{
+        --blanco2: #e6e6e6;
+        --blanco3: #f6f7f8;
+        --negro-trans: #000000aa;
+        --negro: #000;
+        --negro2: #131921;
+        --negro3: #232f3e;
+        --amarillo: #FFD814;
+        --amarillo2: #FEBD69;
+        --amarillo3: #FFA41C;
+        --gris: #333;
+        --gris2: #D5D9D9;
+        --gris3: #9F9F9F;
+        --rojo: #F00;
+        --rojo2: #ae2e0f;
+        --azul: #00F;
+        --azul2: #59a2af;
+        --azul3: #439fc5;
+        --verde: #249324;
+        --verde2: #007185;
+        --anaranjado: #FF8F00;
+    }
     
+    
+    
+    .info-precio-produc {
+        grid-area: info-precio-produc;
+        margin-right: 35px;
+        margin-top: 20px;
+    }
+    .info-precio-produc-interno {
+        border: 1px solid var(--gris2);
+        border-radius: 8px;
+        padding: 5px;
+    }
+    .devolu {
+        font-size: 14px;
+        color: var(--verde2);
+        text-decoration: none;
+    }
+    .icono2 {
+        font-size: 14px;
+        margin: 0;
+    }
+    .info-entrega-producto {
+        font-size: 14px;
+    }
+    .info-detalle {
+        font-size: 14px;
+        color: var(--verde2);
+    }
+    .negrilla {
+        font-weight: 600;
+    }
+    .text-info-entrega-producto-3 {
+        margin: 13px 0;
+    }
+    .letra-verde {
+        color: var(--verde);
+    }
+    .enviar-Colombia {
+        color: var(--azul2);
+        text-decoration: none;
+        margin: 13px 0;
+    }
+    .icons {
+        font-size: 16px;
+        margin: 0 6px 0 0;
+        color: var(--negro);
+    }
+    .cantidad-carrito {
+        margin: 13px 0;
+    }
+    .disponible {
+        font-size: 15px;
+        font-weight: 550;
+        margin: 0 0 8px 0;
+    }
+    .select-cant {
+        height: 25px;
+        margin: 8px 0;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    .btns {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn {
+        height: 36px;
+        font-weight: 550;
+        margin: 6px 0;
+        border: none;
+        border-radius: 20px;
+    }
+    .agregar-carrito {
+        background-color: var(--amarillo);
+        cursor: pointer;
+        width: 80%;
+    }
+    .comprar-ahora {
+        background-color: var(--amarillo3);
+        cursor: pointer;
+        width: 80%;
+    }
+    .table-info-producto-rigth {
+        font-size: 13px;
+    }
+    .td-left-of-content-rigth {
+        padding: 2px 6px 2px 0;
+        display: flex;
+        justify-content: start;
+    }
+    .td-amazon {
+        font-weight: 520;
+    }
+    .color-info {
+        color: var(--azul2);
+    }
+    .agregar-recibo {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+    .input1 {
+        margin: 6px;
+        float: left;
+    }
+    .tex-info-recibo {
+        display: flex;
+        margin: 0 6px;
+        justify-content: start;
+    }
+    .agregar-lista {
+        font-size: 14px;
+        border: 1px solid var(--negro);
+        border-radius: 8px;
+        padding: 6px;
+        margin: 10px 0;
+        cursor: pointer;
+    }
+    .agregar-accesorios {
+        border: 1px solid var(--gris2);
+        border-radius: 8px;
+        margin: 14px 0;
+        font-size: 14.2px;
+    }
+    .agregar-accesorio {
+        text-align: center;
+        font-weight: 600;
+    }
+    .combo-teclado {
+        padding: 8px;
+    }
+    .teclado-of-104-teclas {
+        font-size: 14px;
+    }
+    .precio-plus-btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .us-precio {
+        font-size: 16px;
+        color: var(--rojo);
+    }
+    .btn-agregar-carro {
+        background-color: var(--amarillo);
+        border: none;
+        border-radius: 20px;
+        padding: 5px 7px;
+    }
+    .text-nuevo {
+        font-size: 14px;
+        border: 1px solid var(--gris2);
+        border-radius: 8px;
+        margin: 14px 0;
+        padding: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nuevo-text {
+        display: flex;
+        flex-direction: row;
+    }
+    .order-inicio {
+        display: flex;
+        justify-content: start;
+        margin: 0 6px;
+    }
+    .tamano {
+        font-size: 10px;
+    }
+    .icon-angle-right {
+        margin: 0;
+        text-align: left;
+    }
+    .otro-vendedor {
+        font-size: 14px;
+        border: 1px solid var(--gris2);
+        border-radius: 8px;
+    }
+    .otros-vendedores-amazon, .vendedor {
+        padding: 6px;
+    }
+    .otros-vendedores-amazon {
+        text-align: center;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .precio-and-carrito {
+        color: var(--rojo);
+        display: flex;
+        justify-content: space-between;
+    }
+    .btn-agregar-carrito {
+        background-color: var(--amarillo);
+        border: none;
+        border-radius: 10px;
+        padding: 4px 2px;
+    }
+    .text-vendedor {
+        font-size: 12px;
+    }
+    .vendedor-negrilla {
+        font-weight: 500;
+    }
+    .number-valor{
+        font-size: 1.4em;
+        font-weight: 500;
+    }
 
 /* Fuentes */
 /* poppins-regular - latin */
