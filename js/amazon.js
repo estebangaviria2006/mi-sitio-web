@@ -4,25 +4,25 @@ var boxes = document.querySelectorAll(".box.dia, .box.inicio");
 // Itera sobre cada elemento "box"
 for (var i = 0; i < boxes.length; i++) {
   // Agrega un evento "onclick" a cada elemento "box"
-  boxes[i].onclick = function() {
-      // Obtiene la imagen dentro del elemento "box" en el que se hizo clic
-      var img = this.querySelector("img");
+  boxes[i].onclick = function () {
+    // Obtiene la imagen dentro del elemento "box" en el que se hizo clic
+    var img = this.querySelector("img");
 
-      // Obtiene el elemento "main-img-modal"
-      var mainImgModal = document.querySelector(".main-img-modal");
+    // Obtiene el elemento "main-img-modal"
+    var mainImgModal = document.querySelector(".main-img-modal");
 
-      // Cambia el atributo "src" del elemento "main-img-modal" para que coincida con el atributo "src" de la imagen en el elemento "box" en el que se hizo clic
-      mainImgModal.setAttribute("src", img.getAttribute("src"));
+    // Cambia el atributo "src" del elemento "main-img-modal" para que coincida con el atributo "src" de la imagen en el elemento "box" en el que se hizo clic
+    mainImgModal.setAttribute("src", img.getAttribute("src"));
 
-      // Cambia la clase de todos los elementos "box" a su clase original
-      for (var j = 0; j < boxes.length; j++) {
-          boxes[j].classList.remove("selected");
-      }
+    // Cambia la clase de todos los elementos "box" a su clase original
+    for (var j = 0; j < boxes.length; j++) {
+      boxes[j].classList.remove("selected");
+    }
 
-      // Cambia la clase del elemento "box" en el que se hizo clic a la clase que cambia el color del borde a verde
-      this.classList.add("selected");
+    // Cambia la clase del elemento "box" en el que se hizo clic a la clase que cambia el color del borde a verde
+    this.classList.add("selected");
   }
-} 
+}
 
 /////////
 // Selecciona el principal-box-main-img-modal, el icono de cierre y el contenido de box-modal
@@ -37,7 +37,7 @@ var isVisible = localStorage.getItem("isVisible") === "true";
 boxModal.style.display = isVisible ? "flex" : "none";
 
 // Agrega un evento "onclick" al principal-box-main-img-modal
-principalBoxMainImgModal.onclick = function() {
+principalBoxMainImgModal.onclick = function () {
   // Cambia la propiedad "display" de box-modal para mostrarlo u ocultarlo
   if (boxModal.style.display === "none") {
     boxModal.style.display = "flex";
@@ -52,7 +52,7 @@ principalBoxMainImgModal.onclick = function() {
 }
 
 // Agrega un evento "onclick" al icono de cierre
-btnClose.onclick = function() {
+btnClose.onclick = function () {
   // Cambia la propiedad "display" de box-modal para ocultarlo
   boxModal.style.display = "none";
   isVisible = false;
@@ -80,7 +80,7 @@ let boxMainImgModal44 = document.getElementById("boxMainImgModal44");
 let boxMainImgModal55 = document.getElementById("boxMainImgModal55");
 
 // Evento click en la imagen principal
-mainImgModal111.addEventListener("click", function() {
+mainImgModal111.addEventListener("click", function () {
   // Muestra u oculta el elemento con id "mainContent"
   if (mainContent.style.display === "none") {
     mainContent.style.display = "block";
@@ -124,7 +124,7 @@ miniaturas.forEach((miniatura) => {
     miniatura.style.border = '2px double rgb(214, 211, 211)';
   });
 });
-  
+
 let start1 = document.getElementById("start1");
 let start2 = document.getElementById("start2");
 let start3 = document.getElementById("start3");
@@ -133,78 +133,139 @@ let start5 = document.getElementById("start5");
 let puntuacion = parseFloat(document.getElementById("puntuacion").innerText);
 
 if (puntuacion >= 0 && puntuacion <= 0.2) {
-    asignarClaseEstrella(start1, "estrella fa-regular fa-star");
-    asignarClaseEstrella(start2, "estrella fa-regular fa-star");
-    asignarClaseEstrella(start3, "estrella fa-regular fa-star");
-    asignarClaseEstrella(start4, "estrella fa-regular fa-star");
-    asignarClaseEstrella(start5, "estrella fa-regular fa-star");
+  asignarClaseEstrella(start1, "estrella fa-regular fa-star");
+  asignarClaseEstrella(start2, "estrella fa-regular fa-star");
+  asignarClaseEstrella(start3, "estrella fa-regular fa-star");
+  asignarClaseEstrella(start4, "estrella fa-regular fa-star");
+  asignarClaseEstrella(start5, "estrella fa-regular fa-star");
 } else if (puntuacion > 0.2 && puntuacion <= 0.7) {
-    asignarClaseEstrella(start1, "estrella fa-solid fa-star-half-stroke");
-    asignarClaseEstrella(start2, "estrella fa-regular fa-star");
-    asignarClaseEstrella(start3, "estrella fa-regular fa-star");
-    asignarClaseEstrella(start4, "estrella fa-regular fa-star");
-    asignarClaseEstrella(start5, "estrella fa-regular fa-star");
+  asignarClaseEstrella(start1, "estrella fa-solid fa-star-half-stroke");
+  asignarClaseEstrella(start2, "estrella fa-regular fa-star");
+  asignarClaseEstrella(start3, "estrella fa-regular fa-star");
+  asignarClaseEstrella(start4, "estrella fa-regular fa-star");
+  asignarClaseEstrella(start5, "estrella fa-regular fa-star");
 } else if (puntuacion > 0.7 && puntuacion <= 1.2) {
-    asignarClaseEstrella(start1, "estrella fa-solid fa-star");
-    asignarClaseEstrella(start2, "estrella fa-regular fa-star");
-    asignarClaseEstrella(start3, "estrella fa-regular fa-star");
-    asignarClaseEstrella(start4, "estrella fa-regular fa-star");
-    asignarClaseEstrella(start5, "estrella fa-regular fa-star");
+  asignarClaseEstrella(start1, "estrella fa-solid fa-star");
+  asignarClaseEstrella(start2, "estrella fa-regular fa-star");
+  asignarClaseEstrella(start3, "estrella fa-regular fa-star");
+  asignarClaseEstrella(start4, "estrella fa-regular fa-star");
+  asignarClaseEstrella(start5, "estrella fa-regular fa-star");
 } else if (puntuacion > 1.2 && puntuacion <= 1.7) {
-    asignarClaseEstrella(start1, "estrella fa-solid fa-star");
-    asignarClaseEstrella(start2, "estrella fa-solid fa-star-half-stroke");
-    asignarClaseEstrella(start3, "estrella fa-regular fa-star");
-    asignarClaseEstrella(start4, "estrella fa-regular fa-star");
-    asignarClaseEstrella(start5, "estrella fa-regular fa-star");
+  asignarClaseEstrella(start1, "estrella fa-solid fa-star");
+  asignarClaseEstrella(start2, "estrella fa-solid fa-star-half-stroke");
+  asignarClaseEstrella(start3, "estrella fa-regular fa-star");
+  asignarClaseEstrella(start4, "estrella fa-regular fa-star");
+  asignarClaseEstrella(start5, "estrella fa-regular fa-star");
 } else if (puntuacion > 1.7 && puntuacion <= 2.2) {
-    asignarClaseEstrella(start1, "estrella fa-solid fa-star");
-    asignarClaseEstrella(start2, "estrella fa-solid fa-star");
-    asignarClaseEstrella(start3, "estrella fa-regular fa-star");
-    asignarClaseEstrella(start4, "estrella fa-regular fa-star");
-    asignarClaseEstrella(start5, "estrella fa-regular fa-star");
+  asignarClaseEstrella(start1, "estrella fa-solid fa-star");
+  asignarClaseEstrella(start2, "estrella fa-solid fa-star");
+  asignarClaseEstrella(start3, "estrella fa-regular fa-star");
+  asignarClaseEstrella(start4, "estrella fa-regular fa-star");
+  asignarClaseEstrella(start5, "estrella fa-regular fa-star");
 } else if (puntuacion > 2.2 && puntuacion <= 2.7) {
-    asignarClaseEstrella(start1, "estrella fa-solid fa-star");
-    asignarClaseEstrella(start2, "estrella fa-solid fa-star");
-    asignarClaseEstrella(start3, "estrella fa-solid fa-star-half-stroke");
-    asignarClaseEstrella(start4, "estrella fa-regular fa-star");
-    asignarClaseEstrella(start5, "estrella fa-regular fa-star");
+  asignarClaseEstrella(start1, "estrella fa-solid fa-star");
+  asignarClaseEstrella(start2, "estrella fa-solid fa-star");
+  asignarClaseEstrella(start3, "estrella fa-solid fa-star-half-stroke");
+  asignarClaseEstrella(start4, "estrella fa-regular fa-star");
+  asignarClaseEstrella(start5, "estrella fa-regular fa-star");
 } else if (puntuacion > 2.7 && puntuacion <= 3.2) {
-    asignarClaseEstrella(start1, "estrella fa-solid fa-star");
-    asignarClaseEstrella(start2, "estrella fa-solid fa-star");
-    asignarClaseEstrella(start3, "estrella fa-solid fa-star");
-    asignarClaseEstrella(start4, "estrella fa-regular fa-star");
-    asignarClaseEstrella(start5, "estrella fa-regular fa-star");
+  asignarClaseEstrella(start1, "estrella fa-solid fa-star");
+  asignarClaseEstrella(start2, "estrella fa-solid fa-star");
+  asignarClaseEstrella(start3, "estrella fa-solid fa-star");
+  asignarClaseEstrella(start4, "estrella fa-regular fa-star");
+  asignarClaseEstrella(start5, "estrella fa-regular fa-star");
 } else if (puntuacion > 3.2 && puntuacion <= 3.7) {
-    asignarClaseEstrella(start1, "estrella fa-solid fa-star");
-    asignarClaseEstrella(start2, "estrella fa-solid fa-star");
-    asignarClaseEstrella(start3, "estrella fa-solid fa-star");
-    asignarClaseEstrella(start4, "estrella fa-solid fa-star-half-stroke");
-    asignarClaseEstrella(start5, "estrella fa-regular fa-star");
+  asignarClaseEstrella(start1, "estrella fa-solid fa-star");
+  asignarClaseEstrella(start2, "estrella fa-solid fa-star");
+  asignarClaseEstrella(start3, "estrella fa-solid fa-star");
+  asignarClaseEstrella(start4, "estrella fa-solid fa-star-half-stroke");
+  asignarClaseEstrella(start5, "estrella fa-regular fa-star");
 } else if (puntuacion > 3.7 && puntuacion <= 4.2) {
-    asignarClaseEstrella(start1, "estrella fa-solid fa-star");
-    asignarClaseEstrella(start2, "estrella fa-solid fa-star");
-    asignarClaseEstrella(start3, "estrella fa-solid fa-star");
-    asignarClaseEstrella(start4, "estrella fa-solid fa-star");
-    asignarClaseEstrella(start5, "estrella fa-regular fa-star");
+  asignarClaseEstrella(start1, "estrella fa-solid fa-star");
+  asignarClaseEstrella(start2, "estrella fa-solid fa-star");
+  asignarClaseEstrella(start3, "estrella fa-solid fa-star");
+  asignarClaseEstrella(start4, "estrella fa-solid fa-star");
+  asignarClaseEstrella(start5, "estrella fa-regular fa-star");
 } else if (puntuacion > 4.2 && puntuacion <= 4.7) {
-    asignarClaseEstrella(start1, "estrella fa-solid fa-star");
-    asignarClaseEstrella(start2, "estrella fa-solid fa-star");
-    asignarClaseEstrella(start3, "estrella fa-solid fa-star");
-    asignarClaseEstrella(start4, "estrella fa-solid fa-star");
-    asignarClaseEstrella(start5, "estrella fa-solid fa-star-half-stroke");
+  asignarClaseEstrella(start1, "estrella fa-solid fa-star");
+  asignarClaseEstrella(start2, "estrella fa-solid fa-star");
+  asignarClaseEstrella(start3, "estrella fa-solid fa-star");
+  asignarClaseEstrella(start4, "estrella fa-solid fa-star");
+  asignarClaseEstrella(start5, "estrella fa-solid fa-star-half-stroke");
 } else if (puntuacion > 4.7 && puntuacion <= 5) {
-    asignarClaseEstrella(start1, "estrella fa-solid fa-star");
-    asignarClaseEstrella(start2, "estrella fa-solid fa-star");
-    asignarClaseEstrella(start3, "estrella fa-solid fa-star");
-    asignarClaseEstrella(start4, "estrella fa-solid fa-star");
-    asignarClaseEstrella(start5, "estrella fa-solid fa-star");
+  asignarClaseEstrella(start1, "estrella fa-solid fa-star");
+  asignarClaseEstrella(start2, "estrella fa-solid fa-star");
+  asignarClaseEstrella(start3, "estrella fa-solid fa-star");
+  asignarClaseEstrella(start4, "estrella fa-solid fa-star");
+  asignarClaseEstrella(start5, "estrella fa-solid fa-star");
 }
 
 function asignarClaseEstrella(estrella, clase) {
-    estrella.setAttribute("class", "estrella " + clase);
+  estrella.setAttribute("class", "estrella " + clase);
 }
 
 
 
 
 
+
+
+
+
+
+
+// Para visualizar el contenedor de la informacion de la calificación global
+let star = document.getElementById("star");
+let calificacionGlobal = document.getElementById("calificacionGlobal");
+
+star.addEventListener("mousemove", function () {
+  calificacionGlobal.style.display = "flex";
+});
+calificacionGlobal.addEventListener("mousemove", function () {
+  calificacionGlobal.style.display = "flex";
+});
+star.addEventListener("mouseleave", function () {
+  calificacionGlobal.style.display = "none";
+});
+calificacionGlobal.addEventListener("mouseleave", function () {
+  calificacionGlobal.style.display = "none";
+});
+
+
+
+
+
+$(document).ready(function () {
+  var animating = false; // Variable para rastrear si hay una animación en curso
+
+  function animateBars() {
+    var barrasInteriores = $(".calificacion-global").find(".barra-ineterior");
+
+    barrasInteriores.stop(true, false).width(0); // Detener animaciones y establecer el ancho a 0
+
+    if (!animating) {
+      animating = true;
+
+      barrasInteriores.each(function () {
+        var porcentaje = $(this).data("porcentaje");
+
+        // Anima gradualmente el ancho de las barras al valor de porcentaje
+        $(this).animate({ width: porcentaje + "%" }, 1000, function () {
+          animating = false; // Marcamos que la animación ha terminado
+        });
+      });
+    }
+  }
+
+  $(".estrellas-trigger, .calificacion-global").mouseenter(animateBars);
+
+  $(".estrellas-trigger").mouseleave(function () {
+    // Función que se ejecuta cuando el mouse sale del área de las estrellas
+    animating = false; // Permitir que las barras sigan cargando al entrar al cuadro blanco
+  });
+
+  $(".calificacion-global").mouseleave(function () {
+    // Función que se ejecuta cuando el mouse sale del cuadro blanco
+    animateBars(); // Utiliza la misma función para vaciar completamente las barras
+  });
+});

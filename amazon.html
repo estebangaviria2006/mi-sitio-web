@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/amazon.css">
   <link rel="shortcut icon" href="img/iconoAmazon.png" type="image/png">
-
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <link rel="stylesheet" href="icons/all.css">
   <title>Amazon</title>
 </head>
@@ -71,8 +71,9 @@
 
 
 
-      <div class="box-estrellas"><a href="puntaje.html">
-          <span class="califica" id="puntuacion">2.5</span>
+      <div class="box-estrellas" id="star">
+        <a href="puntaje.html" class="estrellas-trigger">
+          <span class="califica" id="puntuacion">4.3</span>
           <div class="estrella">
             <i id="start1"></i>
           </div>
@@ -92,6 +93,58 @@
       </div>
 
 
+      <div class="calificacion-global" id="calificacionGlobal">
+        <div class="triangulo-1"></div>
+        <div class="estrellas estrella-div">
+          <i class="fa-solid fa-star" id="etrellaUnoDivs"></i>
+          <i class="fa-solid fa-star" id="etrellaDosDivs"></i>
+          <i class="fa-solid fa-star" id="etrellaTresDivs"></i>
+          <i class="fa-solid fa-star" id="etrellaCuatroDivs"></i>
+          <i class="fa-regular fa-star-half-stroke" id="etrellaCincoDivs"></i>
+          <j class="numberEstrellaDivs" id="numberEstrellaDivs">4.3 de 5</j>
+          <P class="number-star-div"></P>
+        </div>
+        <p class="text-calificacion-global">349 calificaciones globales</p>
+        <div class="barras-estrellas">
+          <p a href="#">5 estrellas</p></a>
+          <div class="barra-principal">
+            <div class="barra-ineterior barra-ineterior-5" data-porcentaje="72"></div>
+          </div>
+          <p class="porcentaje-barra">72%</p>
+        </div>
+        <div class="barras-estrellas">
+          <p a href="#">4 estrellas</p></a>
+          <div class="barra-principal">
+            <div class="barra-ineterior barra-ineterior-4" data-porcentaje="10"></div>
+          </div>
+          <p class="porcentaje-barra">10%</p>
+        </div>
+        <div class="barras-estrellas">
+          <p>3 estrellas</p>
+          <div class="barra-principal">
+            <div class="barra-ineterior barra-ineterior-3" data-porcentaje="5"></div>
+          </div>
+          <p class="porcentaje-barra">5%</p>
+        </div>
+        <div class="barras-estrellas">
+          <p a href="#">2 estrellas</p></a>
+          <div class="barra-principal">
+            <div class="barra-ineterior barra-ineterior-2" data-porcentaje="2"></div>
+          </div>
+          <p class="porcentaje-barra">2%</p>
+        </div>
+        <div class="barras-estrellas">
+          <p a href="#">1 estrella</p></a>
+          <div class="barra-principal barra-principal-1">
+            <div class="barra-ineterior barra-ineterior-1" data-porcentaje="10"></div>
+          </div>
+          <p class="porcentaje-barra">10%</p>
+        </div>
+        <hr>
+        <div class="div-opiniones-clientes">
+          <a href="#" class="opiniones-clientes">Ver las opiniones de los clientes ></a>
+        </div>
+      </div>
 
 
 
