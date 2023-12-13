@@ -5,36 +5,44 @@
     font-size: 15px;
     overflow: hidden;
 }
+
 body {
     padding-bottom: 100px;
 }
+
 .mainheader {
     width: 100%;
     height: 80px;
     display: grid;
     color: #fff;
     background-color: #141414;
-    grid-gap: 20px;  /* aqui acomode el pedazo de amazon y de carrito que se me comia */
+    grid-gap: 20px;
+    /* aqui acomode el pedazo de amazon y de carrito que se me comia */
     grid-template: "subheader   ubicacion   content-busqueda    hola    reembolso   idioma    cart" /
-                    140px       90px        1fr                 120px   100px       100px     140px;
+        140px 90px 1fr 120px 100px 100px 140px;
 }
+
 .subheader {
     grid-area: subheader;
     margin: 10px 0 10px 10px;
     padding: 0;
 }
+
 .ubicacion {
     grid-area: ubicacion;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+
 .icono-ubicacion {
     margin: 8px;
 }
+
 .pais {
     font-weight: bold;
 }
+
 .content-busqueda {
     grid-area: content-busqueda;
     display: flex;
@@ -42,20 +50,26 @@ body {
     height: 50px;
     margin: 10px 0;
 }
-#nombre, .input_buscador, .icon-busqueda {
+
+#nombre,
+.input_buscador,
+.icon-busqueda {
     height: 100%;
     border: none;
     margin: 1px;
 }
+
 #nombre {
     width: 60px;
     background-color: #e6e6e6;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
+
 .input_buscador {
     width: calc(100% - 110px);
 }
+
 .icon-busqueda {
     background-color: #ff9100;
     width: 50px;
@@ -63,23 +77,31 @@ body {
     border-bottom-right-radius: 15px;
     cursor: pointer;
 }
-.hola, .reembolso {
+
+.hola,
+.reembolso {
     margin: 16px 0;
 }
+
 .hola {
     grid-area: hola;
 }
+
 .reembolso {
     grid-area: reembolso;
 }
-.cart, .idioma {
+
+.cart,
+.idioma {
     margin: 30px 0;
 }
+
 .idioma {
     grid-area: idioma;
     display: flex;
     flex-direction: row;
 }
+
 .bandera {
     width: 22px;
     height: 15px;
@@ -91,6 +113,7 @@ body {
     cursor: pointer;
     grid-area: cart;
 }
+
 .icono {
     margin: 0 2px 0 -30px;
 }
@@ -113,35 +136,45 @@ body {
     left: -25px;
     z-index: 20;
 }
-.btn-adelante{
+
+.btn-adelante {
     left: 95%;
     z-index: 20;
-    top:152px;
+    top: 152px;
 }
-.style-btn{
+
+.style-btn {
     font-weight: 900;
     font-size: 1.3em;
 }
-.btn-style:hover{
+
+.btn-style:hover {
     color: white;
 }
-.btn-adelante:hover,.btn-atras:hover, .btn-x {
+
+.btn-adelante:hover,
+.btn-atras:hover,
+.btn-x {
     cursor: pointer;
 }
+
 .fondo {
     display: grid;
-    margin-top: -80px; /* Este me sirve para bajarlos o subir las imagenes de los cositos pequeños */
-    margin-left: 100px;/* con este pude centrarlos adebajo de la imagen de la moto del segundo fondo */
+    margin-top: -80px;
+    /* Este me sirve para bajarlos o subir las imagenes de los cositos pequeños */
+    margin-left: 100px;
+    /* con este pude centrarlos adebajo de la imagen de la moto del segundo fondo */
     justify-content: center;
     width: 100%;
-    grid-template: 
-                    "box-img1 empty-1     box-img2  empty-2     box-img3     empty-3   box-img4" 90px/ 
-                    100px       85px        100px       85px        100px           85px        100px;
+    grid-template:
+        "box-img1 empty-1     box-img2  empty-2     box-img3     empty-3   box-img4" 90px/ 100px 85px 100px 85px 100px 85px 100px;
 }
+
 .box-img-mini2 {
     border: 3px solid blue;
     border-radius: 15px;
 }
+
 .img-mini-act2 {
     opacity: .7;
 }
@@ -149,6 +182,7 @@ body {
 .lightbox-hidden {
     visibility: hidden;
 }
+
 .btn-x {
     background-color: rgb(65, 65, 65);
     border-radius: 50%;
@@ -160,23 +194,25 @@ body {
     color: rgb(255, 255, 255);
     position: relative;
     top: -115px;
-    left:100%;
+    left: 100%;
     font-size: 0.8em;
 }
-.style-btn2{
+
+.style-btn2 {
     font-weight: 900;
     font-size: 0.9em;
-    top:2px;
+    top: 2px;
 }
 
 
-.supermain{
+.supermain {
     display: flex;
     justify-content: center;
     margin-left: 140px;
     margin-right: 100px;
     margin-top: 20px;
 }
+
 img {
     border-radius: 10px;
     cursor: pointer;
@@ -192,12 +228,14 @@ img {
 }
 
 .box-img1 {
-    
+
     grid-area: box-img1;
 }
+
 .box-img2 {
     grid-area: box-img2;
 }
+
 .box-img3 {
     grid-area: box-img3;
 }
@@ -213,44 +251,44 @@ img {
     z-index: -20;
 }
 
-.buy-box{
+.buy-box {
     display: block;
     width: 100%;
     margin-left: 20px;
 }
 
 
-.iconop{
+.iconop {
     width: 50px;
     height: 50px;
-    background-color: rgb(230,230,230);
+    background-color: rgb(230, 230, 230);
     color: black;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     border: 1px solid white;
     font-weight: 900;
     cursor: pointer;
     display: flex;
     margin-top: 10px;
 }
-.img-box-main{
+
+.img-box-main {
     display: grid;
     grid-area: img-box-main;
     width: 100px;
-    grid-template:  "img-box    img-box     img-box     img-box     img-box         img-box   img-box" 390px
-                    "empty-0    empty-0     empty-0     empty-0     empty-0         empty-0     empty-0" 10px
-                    "box-img1 empty-1     box-img2  empty-2     box-img3     empty-3   box-img4" 90px/ 
-                    120px       55px        120px       55px        120px           55px        30px;
+    grid-template: "img-box    img-box     img-box     img-box     img-box         img-box   img-box" 390px
+        "empty-0    empty-0     empty-0     empty-0     empty-0         empty-0     empty-0" 10px
+        "box-img1 empty-1     box-img2  empty-2     box-img3     empty-3   box-img4" 90px/ 120px 55px 120px 55px 120px 55px 30px;
 
 }
 
-.buy-box{
+.buy-box {
     display: block;
     width: 100%;
     margin-left: 20px;
 }
 
-.btn-menos{
+.btn-menos {
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
     font-size: 1.8em;
@@ -278,7 +316,7 @@ img {
     align-items: center;
 }
 
-.main-lightbox{
+.main-lightbox {
     width: 450px;
     height: 600px;
 }
@@ -293,7 +331,7 @@ img {
     align-items: center;
     color: black;
     position: relative;
-    top:145px;
+    top: 145px;
 
 }
 
@@ -302,21 +340,24 @@ img {
     z-index: 20;
 }
 
-.btn-adelante{
+.btn-adelante {
     left: 95%;
     z-index: 20;
-    top:100px;
+    top: 100px;
 }
 
-.style-btn{
+.style-btn {
     font-weight: 900;
     font-size: 1.3em;
 }
 
 
-.btn-adelante:hover,.btn-atras:hover, .btn-x {
+.btn-adelante:hover,
+.btn-atras:hover,
+.btn-x {
     cursor: pointer;
 }
+
 .box-img-mini2 {
     border: 3px solid blue;
     border-radius: 15px;
@@ -346,14 +387,15 @@ h2 {
 
 
 
-.valor-total{
+.valor-total {
     font-size: 1.7em;
     padding: 20px;
 }
 
-.totales{
+.totales {
     margin-top: 60px;
 }
+
 .lightbox {
     background-color: rgba(53, 53, 53, 0.719);
     width: 100%;
@@ -368,8 +410,7 @@ h2 {
 .box-main {
     margin-top: 10px;
     display: grid;
-    grid-template: "img-box-main empty"/ 
-                    500px         1fr;
+    grid-template: "img-box-main empty" / 500px 1fr;
 }
 
 
@@ -389,17 +430,21 @@ h2 {
 
 
 .vertical-separator {
-    width: 2px; /* Ancho de la línea vertical */
-    background-color: #000; /* Color de la línea (puedes cambiarlo) */
-    height: 90%; /* Altura del separador, 100% para que abarque toda la altura del contenedor */
+    width: 2px;
+    /* Ancho de la línea vertical */
+    background-color: #000;
+    /* Color de la línea (puedes cambiarlo) */
+    height: 90%;
+    /* Altura del separador, 100% para que abarque toda la altura del contenedor */
     position: absolute;
-    left: 70%; /* Puedes ajustar la posición izquierda/derecha */
+    left: 70%;
+    /* Puedes ajustar la posición izquierda/derecha */
     top: 10;
 }
 
 /* modal */
 
-.box-modal{
+.box-modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -408,35 +453,36 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:rgb(0, 0, 0,.6);
+    background-color: rgb(0, 0, 0, .6);
     z-index: 10;
 
 }
-.modal{
+
+.modal {
     width: 90%;
     height: 80%;
     z-index: 20;
     border-radius: 20px;
     position: relative;
     display: grid;
-    grid-template: "box-main-img-modal  info-modal"     / 
-                            1fr           350px;
+    grid-template: "box-main-img-modal  info-modal" / 1fr 350px;
 
 }
 
 /* la x */
 .btn-close {
-   position: absolute;
-   top: 8px;
-   right: 13px;
-   font-size: 1.4em;
-   border: 2px solid rgb(0, 0, 0);
-   border-radius: 6px;
-   padding: 0 3px;
-   height: 25px;
-   cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 13px;
+    font-size: 1.4em;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 6px;
+    padding: 0 3px;
+    height: 25px;
+    cursor: pointer;
 }
-.box-main-img-modal{
+
+.box-main-img-modal {
     grid-area: box-main-img-modal;
     width: 100%;
     height: 100%;
@@ -444,18 +490,20 @@ h2 {
     justify-content: center;
     align-items: center;
 }
-.main-img-modal{
+
+.main-img-modal {
     width: 40%;
     height: auto;
 }
-.info-modal{
+
+.info-modal {
     grid-area: info-modal;
     padding: 65px 40px 20px 40px;
 
 }
 
 .txt-caracteristicas-modal {
-    
+
     font-size: 1.2em;
     text-align: justify;
     line-height: 1.1em;
@@ -466,660 +514,756 @@ h2 {
 .main-content {
     width: 100%;
     height: 100%;
-    z-index: 10; 
+    z-index: 10;
     border-radius: 10px;
     position: absolute;
     display: grid;
-    grid-template: "principal-container-img     principal-box-main-img-modal    principal-info-modal     info-precio-produc  "   /
-                             150px                       1fr                           1fr                        310px ;
- }
+    grid-template: "principal-container-img     principal-box-main-img-modal    principal-info-modal     info-precio-produc  " /
+        150px 1fr 1fr 310px;
+}
 
- .txt-caracteristicas-titulo, .txt-a, .price, .ultimo, ul, .details, .box-estrellas {
+.txt-caracteristicas-titulo,
+.txt-a,
+.price,
+.ultimo,
+ul,
+.details,
+.box-estrellas {
     padding: 0 20px;
- }
+}
 
 .principal-container-img {
     grid-area: principal-container-img;
     margin-top: 50px;
     margin-left: 81px;
-    
-   
+
+
 }
+
 .principal-box-main-img-modal {
     grid-area: principal-box-main-img-modal;
     width: 100%;
     height: 120%;
-    display: flex;  
+    display: flex;
     justify-content: center;
     padding-top: 0%;
 }
+
 .principal-info-modal {
     grid-area: principal-info-modal;
     padding: 30px 60px 30px 30px;
     margin-right: 250px;
 }
+
 .principal-main-img-modal {
     width: 50%;
     height: 50%;
     margin-top: 60px;
-   
+
 }
+
 .principal-article {
     border-radius: 10px;
-   border: solid 1px rgb(77, 77, 79);
+    border: solid 1px rgb(77, 77, 79);
     height: 50px;
     width: 50px;
-    margin: 15px; 
+    margin: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .article:hover {
-cursor: pointer;
-border: 2px solid rgb(9, 89, 159);
+    cursor: pointer;
+    border: 2px solid rgb(9, 89, 159);
 
 }
 
 
 .img-mini-principal {
     width: 49%;
-    cursor: pointer; 
-  }
-  
+    cursor: pointer;
+}
 
 
-  * modal */
 
-  .box-modal{
-      position: fixed;
-      top: 0px;
-      left: 0px;
-      width: 100%;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color:rgb(0, 0, 0,.5);
-      z-index: 10;
-  
-  }
-  .modal{
-      width: 90%;
-      height: 80%;
-      z-index: 20;
-      background-color: white;
-      border-radius: 20px;
-      position: relative;
-      display: grid;
-      grid-template: "box-main-img-modal  info-modal"   / 
-                              1fr           350px;
-  }
-  
-  
-  
+* modal */ .box-modal {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0, .5);
+    z-index: 10;
 
-  .box-main-img-modal{
-      grid-area: box-main-img-modal;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-  .main-img-modal{
-      width: 40%;
-      object-fit: cover;
-  }
-  .info-modal{
-      grid-area: info-modal;
-      padding: 60px 40px 20px 35px;
-  
-  }
-  .txt-caracteristicas-modal {
-  
-      font-size: 1.1em;
-      text-align: justify;
-      line-height: 1.1em;
-  }img-box
-  
-  
-  /* contenedor pantalla principal */
-  
-  
-  .main-content {
-      width: 100%;
-      height: 100%;
-      z-index: 10; 
-      border-radius: 10px;
-      position: absolute;
-      display: grid;
-      grid-template: "principal-container-img     principal-box-main-img-modal    principal-info-modal     pricipal-sub-contenedor  "   /
-                               150px                       1fr                           650px                        300px ;
-   }
-   .txt-caracteristicas-titulo{
-      font-size: 1.1em;
-      text-align: justify;
-      font-weight: 600;
-     color: rgba(0, 0, 0, 0.661);
-   }
+}
 
-  .principal-box-main-img-modal {
-      grid-area: principal-box-main-img-modal;
-      width: 100%;
-      height: 120%;
-      display: flex;  
-      justify-content: center;
-      padding-top: 0%;
-  }
-  .principal-info-modal {
-      grid-area: principal-info-modal;
-      padding: 30px 60px 30px 30px;
-      margin-right: 250px;
-  }
-  .principal-main-img-modal {
-      width: 50%;
-      height: 50%;
-      margin-top: 60px;
-     
-  }
-  .principal-article {
-      border-radius: 10px;
-     border: solid 1px rgb(77, 77, 79);
-      height: 50px;
-      width: 50px;
-      margin: 15px; 
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-  
-  .article:hover {
-  cursor: pointer;
-  border: 2px solid rgb(9, 89, 159);
-  
-  }
-  
-  
-  .img-mini-principal {
-      width: 49%;
-      cursor: pointer; 
-    }
-    
-  
-    .txt-a {
-        text-decoration: none;
-        font-size: 1.1em;
-        font-family: 'Times New Roman', Times, serif;
-        color: #379694;
-      }
-      
-      .txt-a:hover {
-        text-decoration: underline; /* Muestra la decoración del atributo <a> al pasar el cursor */
-        color: rgb(231, 121, 19) /* Cambia el color a naranja al pasar el cursor */
-      }
-        
-      
-    .price {
-        margin-top: 20px;
-      }
-      
-      .old-price {
-        text-decoration: line-through;
-        color: rgb(77, 76, 69);
-        font-size: 1em;
-      }
-      .old-pricee {
-        text-decoration: line;
-        color: rgb(77, 76, 69);
-        font-size: 1em;
-      }
-      .normal-price {
-        text-decoration: line;
-        color: rgba(0, 0, 0, 0.744);
-        font-size: 15px;
-      }
-      .new-price {
-        color: rgb(195, 38, 38);
-        font-size: 20px;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: bolder;
-      }
-      
-      
-      .details {
-        margin-top: 20px;
-      }
-      
-      ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-      }
-      
-      li {
-        margin-bottom: 10px;
-      }
-      
-      .shipping {
-        margin-top: 20px;
-      }
+.modal {
+    width: 90%;
+    height: 80%;
+    z-index: 20;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    display: grid;
+    grid-template: "box-main-img-modal  info-modal" / 1fr 350px;
+}
 
-      .estrella{
-        color: rgb(255, 164, 28);
-        font-size: 1.1em;
-      }
-      .box-estrellas{
-        display: flex;
-        flex-direction: row;
-        cursor: pointer;
-        /* background-color: #75e4fc; */
-      }
-      
-    
-  .Negrita{
+
+
+
+.box-main-img-modal {
+    grid-area: box-main-img-modal;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-img-modal {
+    width: 40%;
+    object-fit: cover;
+}
+
+.info-modal {
+    grid-area: info-modal;
+    padding: 60px 40px 20px 35px;
+
+}
+
+.txt-caracteristicas-modal {
+
+    font-size: 1.1em;
+    text-align: justify;
+    line-height: 1.1em;
+}
+
+img-box
+/* contenedor pantalla principal */
+
+
+.main-content {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    border-radius: 10px;
+    position: absolute;
+    display: grid;
+    grid-template: "principal-container-img     principal-box-main-img-modal    principal-info-modal     pricipal-sub-contenedor  " /
+        150px 1fr 650px 300px;
+}
+
+.txt-caracteristicas-titulo {
+    font-size: 1.1em;
+    text-align: justify;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.661);
+}
+
+.principal-box-main-img-modal {
+    grid-area: principal-box-main-img-modal;
+    width: 100%;
+    height: 120%;
+    display: flex;
+    justify-content: center;
+    padding-top: 0%;
+}
+
+.principal-info-modal {
+    grid-area: principal-info-modal;
+    padding: 30px 60px 30px 30px;
+    margin-right: 250px;
+}
+
+.principal-main-img-modal {
+    width: 50%;
+    height: 50%;
+    margin-top: 60px;
+
+}
+
+.principal-article {
+    border-radius: 10px;
+    border: solid 1px rgb(77, 77, 79);
+    height: 50px;
+    width: 50px;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article:hover {
+    cursor: pointer;
+    border: 2px solid rgb(9, 89, 159);
+
+}
+
+
+.img-mini-principal {
+    width: 49%;
+    cursor: pointer;
+}
+
+
+.txt-a {
+    text-decoration: none;
+    font-size: 1.1em;
+    font-family: 'Times New Roman', Times, serif;
+    color: #379694;
+}
+
+.txt-a:hover {
+    text-decoration: underline;
+    /* Muestra la decoración del atributo <a> al pasar el cursor */
+    color: rgb(231, 121, 19)
+        /* Cambia el color a naranja al pasar el cursor */
+}
+
+
+.price {
+    margin-top: 20px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: rgb(77, 76, 69);
+    font-size: 1em;
+}
+
+.old-pricee {
+    text-decoration: line;
+    color: rgb(77, 76, 69);
+    font-size: 1em;
+}
+
+.normal-price {
+    text-decoration: line;
+    color: rgba(0, 0, 0, 0.744);
+    font-size: 15px;
+}
+
+.new-price {
+    color: rgb(195, 38, 38);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+
+.details {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.shipping {
+    margin-top: 20px;
+}
+
+.estrella {
+    color: rgb(255, 164, 28);
+    font-size: 1.1em;
+}
+
+.box-estrellas {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    /* background-color: #75e4fc; */
+}
+
+
+.Negrita {
     font-weight: bolder;
     font-size: 18px;
-  }
-  .Negrita2{
+}
+
+.Negrita2 {
     font-weight: bolder;
     font-size: 18px;
-  }
+}
 
-  .Negrita3{
+.Negrita3 {
     font-weight: bolder;
     font-size: 12px;
     margin-top: 15px;
-  }
+}
 
-  .detalle1{
+.detalle1 {
     margin-left: 150px;
     margin-top: -30px;
     font-size: 13px;
-  }
-  .detalle2{
+}
+
+.detalle2 {
     margin-left: 150px;
     margin-top: -40px;
     font-size: 13px;
-  }  
+}
 
-  .detalle3{
+.detalle3 {
     margin-left: 150px;
     margin-top: -30px;
     font-size: 13px;
-  }  
+}
 
-  .lista-puntos {
-    list-style-type: disc; /* Puntos redondos */
-    margin-left: 20px; /* Ajusta el espacio entre los puntos y el texto */
-  }
+.lista-puntos {
+    list-style-type: disc;
+    /* Puntos redondos */
+    margin-left: 20px;
+    /* Ajusta el espacio entre los puntos y el texto */
+}
 
-  .acercaAR{
+.acercaAR {
     font-size: 13px;
-  }
+}
 
-  /* cuadritos imagenes chiquitas */
-  .contenedor {
-      position: absolute;
-      top: 240px;
-      right: 1px;
-     /*  width: 3400px;
+/* cuadritos imagenes chiquitas */
+.contenedor {
+    position: absolute;
+    top: 240px;
+    right: 1px;
+    /*  width: 3400px;
       height: 1000px; */
-      display: grid;
-      align-content: center;
-      justify-content: center;
-      /* border: 1px solid black; */
-      grid-template-columns: repeat(4, 60px);/* ancho */
-      grid-template-rows: repeat(6,60px) ;  /* alto */    /* tambien funciona el codigo   repeat(4, 100 px) */ /* 1fr  =   1fraccion */
-      grid-gap: 20px 24px;
-      }
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+    grid-template-columns: repeat(4, 60px);
+    /* ancho */
+    grid-template-rows: repeat(6, 60px);
+    /* alto */
+    /* tambien funciona el codigo   repeat(4, 100 px) */
+    /* 1fr  =   1fraccion */
+    grid-gap: 20px 24px;
+}
 
-      .imgs {
-        width: 85%;
-      }
+.imgs {
+    width: 85%;
+}
 
-      .contenedor .inicio {
-          grid-column-start: 1;
-          background-color: rgb(255, 255, 255) ;
-          display: flex;
-          justify-content: center;
-          align-content: center;
-          color: white;
-          cursor: pointer;
-          border: 2px solid rgb(218, 218, 218);
-        
-      }
-      .box:hover {
-          padding: 1px;
-          border:2px solid #30598d;
-      }
-      .dia {
-          background-color: rgb(255, 255, 255) ;
-          display: flex;
-          justify-content: center;
-          align-content: center;
-          color: white;
-          cursor: pointer;
-          border: 2px solid rgb(218, 218, 218);
-      }
-      .selected {
-          border-color: rgb(247, 96, 15);
-        }
-  
-        /* zoom */
+.contenedor .inicio {
+    grid-column-start: 1;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    cursor: pointer;
+    border: 2px solid rgb(218, 218, 218);
 
+}
 
+.box:hover {
+    padding: 1px;
+    border: 2px solid #30598d;
+}
 
+.dia {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    cursor: pointer;
+    border: 2px solid rgb(218, 218, 218);
+}
 
-    /* Con este puedo acomodar el borde de los cuadritos pequeños */
-    .contenedor .inicio {
-        grid-column-start: 1;
-        background-color: rgb(255, 255, 255) ;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        cursor: pointer;
-        border: 1px solid rgb(93, 93, 93)  ;
-        border-radius: 3px;
-    }
+.selected {
+    border-color: rgb(247, 96, 15);
+}
+
+/* zoom */
 
 
-    /* Este es para el cosito de los cuadros pequeños cuando paso el mouse por encima, este solo funciona para un cuadrito */
+
+
+/* Con este puedo acomodar el borde de los cuadritos pequeños */
+.contenedor .inicio {
+    grid-column-start: 1;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    border: 1px solid rgb(93, 93, 93);
+    border-radius: 3px;
+}
+
+
+/* Este es para el cosito de los cuadros pequeños cuando paso el mouse por encima, este solo funciona para un cuadrito */
 .contenedor .inicio:hover {
     opacity: 0.7;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-   /* Este es para el cosito de los cuadros pequeños cuando paso el mouse por encima, este funciona para todos los otros cuadritos*/
-    .contenedor .dia:hover {
-        opacity: 0.7;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    }
+/* Este es para el cosito de los cuadros pequeños cuando paso el mouse por encima, este funciona para todos los otros cuadritos*/
+.contenedor .dia:hover {
+    opacity: 0.7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 
 
 
-    
-    .box {
-        padding: 3px;
-        background-color: rgb(170, 170, 170);
-    
-    }
 
-    /* Con este puedo acomodar el borde de los cuadritos pequeños */
-    .dia {
-        background-color: rgb(255, 255, 255) ;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        color: white;
-        cursor: pointer;
-        border: 1px solid rgb(93, 93, 93)  ;
-       border-radius: 3px;
-    }
+.box {
+    padding: 3px;
+    background-color: rgb(170, 170, 170);
 
-    :root{
-        --blanco2: #e6e6e6;
-        --blanco3: #f6f7f8;
-        --negro-trans: #000000aa;
-        --negro: #000;
-        --negro2: #131921;
-        --negro3: #232f3e;
-        --amarillo: #FFD814;
-        --amarillo2: #FEBD69;
-        --amarillo3: #FFA41C;
-        --gris: #333;
-        --gris2: #D5D9D9;
-        --gris3: #9F9F9F;
-        --rojo: #F00;
-        --rojo2: #ae2e0f;
-        --azul: #00F;
-        --azul2: #59a2af;
-        --azul3: #439fc5;
-        --verde: #249324;
-        --verde2: #007185;
-        --anaranjado: #FF8F00;
-    }
-    
-    
-    
-    .info-precio-produc {
-        grid-area: info-precio-produc;
-        margin-right: 35px;
-        margin-top: 20px;
-    }
-    .info-precio-produc-interno {
-        border: 1px solid var(--gris2);
-        border-radius: 8px;
-        padding: 5px;
-    }
-    .devolu {
-        font-size: 14px;
-        color: var(--verde2);
-        text-decoration: none;
-    }
-    .icono2 {
-        font-size: 14px;
-        margin: 0;
-    }
-    .info-entrega-producto {
-        font-size: 14px;
-    }
-    .info-detalle {
-        font-size: 14px;
-        color: var(--verde2);
-    }
-    .negrilla {
-        font-weight: 600;
-    }
-    .text-info-entrega-producto-3 {
-        margin: 13px 0;
-    }
-    .letra-verde {
-        color: var(--verde);
-    }
-    .enviar-Colombia {
-        color: var(--azul2);
-        text-decoration: none;
-        margin: 13px 0;
-    }
-    .icons {
-        font-size: 16px;
-        margin: 0 6px 0 0;
-        color: var(--negro);
-    }
-    .cantidad-carrito {
-        margin: 13px 0;
-    }
-    .disponible {
-        font-size: 15px;
-        font-weight: 550;
-        margin: 0 0 8px 0;
-    }
-    .select-cant {
-        height: 25px;
-        margin: 8px 0;
-        border-radius: 6px;
-        cursor: pointer;
-    }
-    .btns {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .btn {
-        height: 36px;
-        font-weight: 550;
-        margin: 6px 0;
-        border: none;
-        border-radius: 20px;
-    }
-    .agregar-carrito {
-        background-color: var(--amarillo);
-        cursor: pointer;
-        width: 80%;
-    }
-    .comprar-ahora {
-        background-color: var(--amarillo3);
-        cursor: pointer;
-        width: 80%;
-    }
-    .table-info-producto-rigth {
-        font-size: 13px;
-    }
-    .td-left-of-content-rigth {
-        padding: 2px 6px 2px 0;
-        display: flex;
-        justify-content: start;
-    }
-    .td-amazon {
-        font-weight: 520;
-    }
-    .color-info {
-        color: var(--azul2);
-    }
-    .agregar-recibo {
-        font-size: 14px;
-        margin-bottom: 12px;
-    }
-    .input1 {
-        margin: 6px;
-        float: left;
-    }
-    .tex-info-recibo {
-        display: flex;
-        margin: 0 6px;
-        justify-content: start;
-    }
-    .agregar-lista {
-        font-size: 14px;
-        border: 1px solid var(--negro);
-        border-radius: 8px;
-        padding: 6px;
-        margin: 10px 0;
-        cursor: pointer;
-    }
-    .agregar-accesorios {
-        border: 1px solid var(--gris2);
-        border-radius: 8px;
-        margin: 14px 0;
-        font-size: 14.2px;
-    }
-    .agregar-accesorio {
-        text-align: center;
-        font-weight: 600;
-    }
-    .combo-teclado {
-        padding: 8px;
-    }
-    .teclado-of-104-teclas {
-        font-size: 14px;
-    }
-    .precio-plus-btn {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .us-precio {
-        font-size: 16px;
-        color: var(--rojo);
-    }
-    .btn-agregar-carro {
-        background-color: var(--amarillo);
-        border: none;
-        border-radius: 20px;
-        padding: 5px 7px;
-    }
-    .text-nuevo {
-        font-size: 14px;
-        border: 1px solid var(--gris2);
-        border-radius: 8px;
-        margin: 14px 0;
-        padding: 15px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .nuevo-text {
-        display: flex;
-        flex-direction: row;
-    }
-    .order-inicio {
-        display: flex;
-        justify-content: start;
-        margin: 0 6px;
-    }
-    .tamano {
-        font-size: 10px;
-    }
-    .icon-angle-right {
-        margin: 0;
-        text-align: left;
-    }
-    .otro-vendedor {
-        font-size: 14px;
-        border: 1px solid var(--gris2);
-        border-radius: 8px;
-    }
-    .otros-vendedores-amazon, .vendedor {
-        padding: 6px;
-    }
-    .otros-vendedores-amazon {
-        text-align: center;
-        font-weight: 600;
-        font-size: 14px;
-    }
-    .precio-and-carrito {
-        color: var(--rojo);
-        display: flex;
-        justify-content: space-between;
-    }
-    .btn-agregar-carrito {
-        background-color: var(--amarillo);
-        border: none;
-        border-radius: 10px;
-        padding: 4px 2px;
-    }
-    .text-vendedor {
-        font-size: 12px;
-    }
-    .vendedor-negrilla {
-        font-weight: 500;
-    }
-    .number-valor{
-        font-size: 1.4em;
-        font-weight: 500;
-    }
+}
+
+/* Con este puedo acomodar el borde de los cuadritos pequeños */
+.dia {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    cursor: pointer;
+    border: 1px solid rgb(93, 93, 93);
+    border-radius: 3px;
+}
+
+:root {
+    --blanco2: #e6e6e6;
+    --blanco3: #f6f7f8;
+    --negro-trans: #000000aa;
+    --negro: #000;
+    --negro2: #131921;
+    --negro3: #232f3e;
+    --amarillo: #FFD814;
+    --amarillo2: #FEBD69;
+    --amarillo3: #FFA41C;
+    --gris: #333;
+    --gris2: #D5D9D9;
+    --gris3: #9F9F9F;
+    --rojo: #F00;
+    --rojo2: #ae2e0f;
+    --azul: #00F;
+    --azul2: #59a2af;
+    --azul3: #439fc5;
+    --verde: #249324;
+    --verde2: #007185;
+    --anaranjado: #FF8F00;
+}
+
+
+
+.info-precio-produc {
+    grid-area: info-precio-produc;
+    margin-right: 35px;
+    margin-top: 20px;
+}
+
+.info-precio-produc-interno {
+    border: 1px solid var(--gris2);
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.devolu {
+    font-size: 14px;
+    color: var(--verde2);
+    text-decoration: none;
+}
+
+.icono2 {
+    font-size: 14px;
+    margin: 0;
+}
+
+.info-entrega-producto {
+    font-size: 14px;
+}
+
+.info-detalle {
+    font-size: 14px;
+    color: var(--verde2);
+}
+
+.negrilla {
+    font-weight: 600;
+}
+
+.text-info-entrega-producto-3 {
+    margin: 13px 0;
+}
+
+.letra-verde {
+    color: var(--verde);
+}
+
+.enviar-Colombia {
+    color: var(--azul2);
+    text-decoration: none;
+    margin: 13px 0;
+}
+
+.icons {
+    font-size: 16px;
+    margin: 0 6px 0 0;
+    color: var(--negro);
+}
+
+.cantidad-carrito {
+    margin: 13px 0;
+}
+
+.disponible {
+    font-size: 15px;
+    font-weight: 550;
+    margin: 0 0 8px 0;
+}
+
+.select-cant {
+    height: 25px;
+    margin: 8px 0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    height: 36px;
+    font-weight: 550;
+    margin: 6px 0;
+    border: none;
+    border-radius: 20px;
+}
+
+.agregar-carrito {
+    background-color: var(--amarillo);
+    cursor: pointer;
+    width: 80%;
+}
+
+.comprar-ahora {
+    background-color: var(--amarillo3);
+    cursor: pointer;
+    width: 80%;
+}
+
+.table-info-producto-rigth {
+    font-size: 13px;
+}
+
+.td-left-of-content-rigth {
+    padding: 2px 6px 2px 0;
+    display: flex;
+    justify-content: start;
+}
+
+.td-amazon {
+    font-weight: 520;
+}
+
+.color-info {
+    color: var(--azul2);
+}
+
+.agregar-recibo {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.input1 {
+    margin: 6px;
+    float: left;
+}
+
+.tex-info-recibo {
+    display: flex;
+    margin: 0 6px;
+    justify-content: start;
+}
+
+.agregar-lista {
+    font-size: 14px;
+    border: 1px solid var(--negro);
+    border-radius: 8px;
+    padding: 6px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.agregar-accesorios {
+    border: 1px solid var(--gris2);
+    border-radius: 8px;
+    margin: 14px 0;
+    font-size: 14.2px;
+}
+
+.agregar-accesorio {
+    text-align: center;
+    font-weight: 600;
+}
+
+.combo-teclado {
+    padding: 8px;
+}
+
+.teclado-of-104-teclas {
+    font-size: 14px;
+}
+
+.precio-plus-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.us-precio {
+    font-size: 16px;
+    color: var(--rojo);
+}
+
+.btn-agregar-carro {
+    background-color: var(--amarillo);
+    border: none;
+    border-radius: 20px;
+    padding: 5px 7px;
+}
+
+.text-nuevo {
+    font-size: 14px;
+    border: 1px solid var(--gris2);
+    border-radius: 8px;
+    margin: 14px 0;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nuevo-text {
+    display: flex;
+    flex-direction: row;
+}
+
+.order-inicio {
+    display: flex;
+    justify-content: start;
+    margin: 0 6px;
+}
+
+.tamano {
+    font-size: 10px;
+}
+
+.icon-angle-right {
+    margin: 0;
+    text-align: left;
+}
+
+.otro-vendedor {
+    font-size: 14px;
+    border: 1px solid var(--gris2);
+    border-radius: 8px;
+}
+
+.otros-vendedores-amazon,
+.vendedor {
+    padding: 6px;
+}
+
+.otros-vendedores-amazon {
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.precio-and-carrito {
+    color: var(--rojo);
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-agregar-carrito {
+    background-color: var(--amarillo);
+    border: none;
+    border-radius: 10px;
+    padding: 4px 2px;
+}
+
+.text-vendedor {
+    font-size: 12px;
+}
+
+.vendedor-negrilla {
+    font-weight: 500;
+}
+
+.number-valor {
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+
+a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
 
 /* Fuentes */
 /* poppins-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* poppins-500 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  src: url('../fonts/poppins-v20-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/poppins-v20-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* poppins-600 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* poppins-800 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 800;
-  src: url('../fonts/poppins-v20-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/poppins-v20-latin-800.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }

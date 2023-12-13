@@ -1,10 +1,10 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const inputs = document.querySelectorAll("input");
     const barras = document.querySelectorAll(".barra");
     const porcentajes = document.querySelectorAll(".porcentaje");
     const graficarBtn = document.getElementById("graficarBtn");
 
-    graficarBtn.addEventListener("click", function() {
+    graficarBtn.addEventListener("click", function () {
         let totalVotos = 0;
 
         // Obtener el total de votos
